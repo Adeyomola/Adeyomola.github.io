@@ -1,38 +1,638 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Nunito:wght@200&family=Quicksand:wght@300;500&family=Roboto:wght@100&display=swap');
+
+* {
+  --active-color: #3786df;
+  --nav-link-font: fantasy;
+  --intro-line-font: 'Quicksand';
+  --intro-second-line: 'Caveat';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html,
+body {
+  font-size: 15px;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  background-color: white;
+}
+
+#logo {
+  position: fixed;
+  font: 2.8rem var(--intro-second-line);
+  font-weight: 900;
+  color: #014088;
+  margin-left: 1rem;
+  text-align: center;
+  z-index: 20;
+}
+
+nav a {
+  margin: 5px;
+  text-decoration: none;
+  font: 1rem var(--intro-line-font);
+  color: #3786df;
+  padding: 10px;
+}
+
+a[href*='#cloud'] {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.active {
+  background-color: #014088;
+  border-radius: 3px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hamburger {
+  display: none;
+  position: fixed;
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 4px 6px;
+  background-color: #014088;
+  border-radius: 1mm;
+}
+
+/* About Me Styling */
+main {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  transform: translateY(50%);
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#Me {
+  padding-left: 11rem;
+}
+
+#pictureDiv {
+  display: flex;
+}
+
+#My-picture {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: -1px 1px 4px 8px #429aff57;
+}
+
+#welcome {
+  width: 80%;
+  max-width: 100%;
+  grid-column: span 2;
+}
+
+#hi {
+  font: 2.5rem var(--intro-second-line);
+  color: #014088;
+}
+
+#intro {
+  font: 5rem var(--intro-line-font);
+  color: #014088;
+}
+
+#details {
+  margin: 1rem auto;
+  font: 1.1rem 'Nunito';
+  color: black;
+  line-height: 1.7rem;
+}
+
+/* Frontend Styling */
+
+#link-container {
+  width: 80%;
+  height: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #429aff57;
+  border-radius: 5px;
+  transform: translateY(15%);
+  padding-top: 1rem;
+}
+
+#frontendTitle {
+  font: 1.3rem var(--intro-line-font);
+  font-weight: 600;
+  color: #3786df;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  padding: 1rem;
+}
+
+section>a {
+  height: 10rem;
+  width: 12rem;
+  padding: 4rem 1rem 0 1rem;
+  border: 1px solid #3786df;
+  border-radius: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Nunito';
+  font-size: 1rem;
+  background-color: #014088;
+  margin: 1rem;
+}
+
+section>a:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 5px 2px 10px 1px #fcfcfdc9;
+}
+
+/* media query for small smartphones */
+@media (min-width: 0px) and (max-width: 359px) {
+  #logo {
+    right: 0;
+    font-size: 1.8rem;
+    z-index: 10;
+    position: absolute;
+    margin-right: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #014088;
+    width: 60%;
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 3px;
+    position: fixed;
+    transform: translateX(-400px);
+    z-index: 10;
+    padding-top: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .shownav {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  nav a {
+    color: gainsboro;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    transform: translateX(1rem);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 3px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 2px;
+    z-index: 10;
+  }
+
+  .hamburger2 span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 15px;
+    border-radius: 1mm;
+    background-color: white;
+  }
+
+  .hamburger2>.top-bun {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  .hamburger2>.middle {
+    visibility: hidden;
+  }
+
+  .hamburger2>.bottom-bun {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  /* About Styling */
+  main {
+    transform: translateY(7%);
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Me {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 80%;
+  }
+
+  #My-picture {
+    width: 45%;
+  }
+
+  #welcome {
+    margin-top: 0.8rem;
+    width: 100%;
+  }
+
+  #hi {
+    font: 1.2rem var(--intro-second-line);
+    color: #014088;
+    text-align: center;
+  }
+
+  #intro {
+    font: 2.2rem var(--intro-line-font);
+    color: #014088;
+    text-align: center;
+  }
+
+  #details {
+    font: 0.7rem 'Nunito';
+    line-height: 1rem;
+    text-align: justify;
+  }
+
+  .truncateLinks {
+    color: #014088;
+    font: 0.7rem 'Nunito';
+  }
+
+  .seeLess {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .seeMore {
+    overflow: visible;
+    white-space: normal;
+    text-overflow: none;
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    width: 100%;
+    background-color: transparent;
+    transform: translateY(10%);
+  }
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0.8rem;
+  }
+
+  section>a {
+    height: 5rem;
+    width: 5rem;
+    padding-top: 1rem;
+    font-size: 0.6rem;
+    margin: 0.6rem;
+  }
+}
+
+/* media query for phablets */
+@media (min-width: 360px) and (max-width: 760px) {
+  #logo {
+    right: 0;
+    font-size: 2rem;
+    z-index: 10;
+    position: absolute;
+    margin-right: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #014088;
+    width: 60%;
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 3px;
+    padding-top: 0.5rem;
+    position: fixed;
+    transform: translateX(-800px);
+    z-index: 10;
+    transition: 0.5s;
+  }
+
+  .shownav {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  nav a {
+    color: gainsboro;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    transform: translateX(0.5rem);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 3px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 2px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .hamburger2 span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 15px;
+    border-radius: 1mm;
+    background-color: white;
+  }
+
+  .hamburger2>.top-bun {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  .hamburger2>.middle {
+    visibility: hidden;
+  }
+
+  .hamburger2>.bottom-bun {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  /* About Styling */
+  main {
+    transform: translateY(10%);
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Me {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 80%;
+  }
+
+  #My-picture {
+    width: 50%;
+  }
+
+  #welcome {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  #hi {
+    font: 2rem var(--intro-second-line);
+    color: #014088;
+    text-align: center;
+  }
+
+  #intro {
+    font: 2.8rem var(--intro-line-font);
+    color: #014088;
+    text-align: center;
+  }
+
+  #details {
+    margin: 1rem auto;
+    font: 0.8rem 'Nunito';
+    line-height: 1.7rem;
+    text-align: justify;
+  }
+
+  .truncateLinks {
+    color: #014088;
+    text-align: left;
+    font: 0.8rem 'Nunito';
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    width: 100%;
+    transform: translateY(10%);
+    background-color: transparent;
+  }
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section>a {
+    height: 6rem;
+    width: 6rem;
+    padding-top: 1rem;
+    font-size: 0.7rem;
+    margin: 0.6rem;
+  }
+}
+
+/* media query for tablets */
+@media (min-width: 761px) and (max-width: 1279px) {
+  #logo {
+    right: 0;
+    font-size: 2.8rem;
+    z-index: 10;
+    position: absolute;
+    margin-right: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #014088;
+    width: 55%;
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 3px;
+    position: fixed;
+    transform: translateX(-1280px);
+    z-index: 10;
+    padding-top: 0.8rem;
+    transition: 0.5s;
+  }
+
+  .shownav {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  nav a {
+    color: gainsboro;
+    font-size: large;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    transform: translateX(1rem);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 3px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 5px;
+    transform: scale(1.2);
+    z-index: 10;
+  }
+
+  .hamburger2 span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 15px;
+    border-radius: 1mm;
+    background-color: white;
+  }
+
+  .hamburger2>.top-bun {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  .hamburger2>.middle {
+    visibility: hidden;
+  }
+
+  .hamburger2>.bottom-bun {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  /* About Styling */
+  main {
+    transform: translateY(30%);
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Me {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 80%;
+  }
+
+  #My-picture {
+    width: 40%;
+  }
+
+  #welcome {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  #hi {
+    font: 2.5rem var(--intro-second-line);
+    color: #014088;
+  }
+
+  #intro {
+    font: 3.5rem var(--intro-line-font);
+    color: #014088;
+  }
+
+  #details {
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    font: 1.3rem 'Nunito';
+    color: black;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    width: 100%;
+    background-color: transparent;
+    transform: translateY(5%);
+  }
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+  }
+
+  section>a {
+    height: 11rem;
+    width: 11rem;
+    padding-top: 3.5rem;
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 760px) and (orientation: landscape) {
+
+  body {
+    height: 105vw;
+  }
+
+  #link-container {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1023px) and (orientation: landscape) {
+
+  body {
+    height: 95vw;
+  }
+
+  #link-container {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+
+  body {
+    height: 74vw;
+  }
+
+  #link-container {
+    background-color: transparent;
   }
 }
