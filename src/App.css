@@ -18,6 +18,11 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  border-bottom: 1px solid rgba(188, 183, 183, 0.425);
+  background-color: rgba(228, 224, 224, 0.247);
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -25,50 +30,71 @@ nav {
   display: flex;
   justify-content: flex-end;
   z-index: 10;
-  background-color: white;
+  background-color: #014088;
 }
 
 #logo {
   position: fixed;
-  font: 2.8rem var(--intro-second-line);
+  font: 3.3rem var(--intro-second-line);
   font-weight: 900;
-  color: #014088;
+  /* color: #014088; */
+  color: white;
   margin-left: 1rem;
   text-align: center;
   z-index: 20;
+  top: -0.1rem;
 }
 
 nav a {
   margin: 5px;
   text-decoration: none;
   font: 1rem var(--intro-line-font);
-  color: #3786df;
-  padding: 10px;
+  /* color: #3786df; */
+  color: white;
+  padding: 1rem;
 }
 
-a[href*='#cloud'] {
+/* a[href*='#cloud'] {
   pointer-events: none;
-}
+} */
 
 nav a:hover {
   text-decoration: underline;
 }
 
 .active {
-  background-color: #014088;
+  /* background-color: #014088; */
   border-radius: 3px;
-  color: white;
+  /* color: white; */
+  color: rgba(228, 224, 224, 0.668);
 }
 
 .hamburger {
   display: none;
   position: fixed;
-  float: right;
 }
 
-.hamburger span {
+.hamburger .top-bun {
   display: block;
-  width: 25px;
+  width: 28px;
+  height: 4px;
+  margin: 4px 6px;
+  background-color: #014088;
+  border-radius: 1mm;
+}
+
+.hamburger .middle {
+  display: block;
+  width: 20px;
+  height: 4px;
+  margin: 4px 6px;
+  background-color: #014088;
+  border-radius: 1mm;
+}
+
+.hamburger .bottom-bun {
+  display: block;
+  width: 15px;
   height: 4px;
   margin: 4px 6px;
   background-color: #014088;
@@ -128,13 +154,14 @@ main {
   font: 1.1rem 'Nunito';
   color: black;
   line-height: 1.7rem;
+  text-align: justify;
 }
 
 /* Frontend Styling */
 
 #link-container {
   width: 80%;
-  height: max-content;
+  height: 85%;
   max-width: 100%;
   margin: 0 auto;
   background-color: #429aff57;
@@ -146,7 +173,7 @@ main {
 #frontendTitle {
   font: 1.3rem var(--intro-line-font);
   font-weight: 600;
-  color: #3786df;
+  color: #014088;
   text-align: center;
 }
 
@@ -181,10 +208,11 @@ section>a:hover {
 @media (min-width: 0px) and (max-width: 359px) {
   #logo {
     right: 0;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     z-index: 10;
     position: absolute;
     margin-right: 1rem;
+    color: #014088;
   }
 
   nav {
@@ -272,38 +300,26 @@ section>a:hover {
   }
 
   #hi {
-    font: 1.2rem var(--intro-second-line);
+    font-size: 1.2rem;
     color: #014088;
     text-align: center;
   }
 
   #intro {
-    font: 2.2rem var(--intro-line-font);
+    font-size: 2.2rem;
     color: #014088;
     text-align: center;
   }
 
   #details {
-    font: 0.7rem 'Nunito';
-    line-height: 1rem;
+    font: 0.8rem 'Nunito';
+    line-height: 1.1rem;
     text-align: justify;
   }
 
   .truncateLinks {
     color: #014088;
     font: 0.7rem 'Nunito';
-  }
-
-  .seeLess {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .seeMore {
-    overflow: visible;
-    white-space: normal;
-    text-overflow: none;
   }
 
   /* Frontend Styling */
@@ -331,10 +347,11 @@ section>a:hover {
 @media (min-width: 360px) and (max-width: 760px) {
   #logo {
     right: 0;
-    font-size: 2rem;
+    font-size: 2.8rem;
     z-index: 10;
     position: absolute;
     margin-right: 1rem;
+    color: #014088;
   }
 
   nav {
@@ -423,21 +440,21 @@ section>a:hover {
   }
 
   #hi {
-    font: 2rem var(--intro-second-line);
+    font-size: 2rem;
     color: #014088;
     text-align: center;
   }
 
   #intro {
-    font: 2.8rem var(--intro-line-font);
+    font-size: 2.8rem;
     color: #014088;
     text-align: center;
   }
 
   #details {
     margin: 1rem auto;
-    font: 0.8rem 'Nunito';
-    line-height: 1.7rem;
+    font: 1rem 'Nunito';
+    line-height: 1.5rem;
     text-align: justify;
   }
 
@@ -471,10 +488,11 @@ section>a:hover {
 @media (min-width: 761px) and (max-width: 1279px) {
   #logo {
     right: 0;
-    font-size: 2.8rem;
+    font-size: 3.8rem;
     z-index: 10;
     position: absolute;
     margin-right: 1rem;
+    color: #014088;
   }
 
   nav {
@@ -540,7 +558,7 @@ section>a:hover {
 
   /* About Styling */
   main {
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
 
   #content {
@@ -577,9 +595,9 @@ section>a:hover {
   #details {
     margin: 1rem auto;
     border-radius: 0.5rem;
-    font: 1.3rem 'Nunito';
+    font: 1.5rem 'Nunito';
     color: black;
-    line-height: 1.8rem;
+    line-height: 2.1rem;
     text-align: justify;
   }
 

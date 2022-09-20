@@ -8,7 +8,7 @@ function Front() {
         }}
       >
         <div id="link-container">
-        <p id="frontendTitle">Front-End Projects</p>
+          <p id="frontendTitle">Front-End Projects</p>
           <section>
             <a href="https://adeyomola.github.io/redactr" target="_blank">
               Redactr
@@ -63,6 +63,12 @@ function Front() {
               target="_blank"
             >
               FE Mentor Barcode Challenge
+            </a>
+            <a
+              href="https://adeyomola.github.io/vanilla_website/"
+              target="_blank"
+            >
+              Old Website
             </a>
           </section>
         </div>
