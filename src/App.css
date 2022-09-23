@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Nunito:wght@200&family=Quicksand:wght@300;500&family=Roboto:wght@100&display=swap');
 
 * {
-  --active-color: #3786df;
-  --nav-link-font: fantasy;
   --intro-line-font: 'Quicksand';
   --intro-second-line: 'Caveat';
   margin: 0;
@@ -19,8 +17,10 @@ body {
 }
 
 body {
-  border-bottom: 1px solid rgba(188, 183, 183, 0.425);
-  background-color: rgba(228, 224, 224, 0.247);
+  background-image: url(/src/Adeyomola-4.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
@@ -30,15 +30,14 @@ nav {
   display: flex;
   justify-content: flex-end;
   z-index: 10;
-  background-color: #014088;
+  background-color: #030303;
 }
 
 #logo {
   position: fixed;
-  font: 3.3rem var(--intro-second-line);
+  font: 3rem var(--intro-line-font);
   font-weight: 900;
-  /* color: #014088; */
-  color: white;
+  color: wheat;
   margin-left: 1rem;
   text-align: center;
   z-index: 20;
@@ -49,24 +48,17 @@ nav a {
   margin: 5px;
   text-decoration: none;
   font: 1rem var(--intro-line-font);
-  /* color: #3786df; */
   color: white;
   padding: 1rem;
 }
-
-/* a[href*='#cloud'] {
-  pointer-events: none;
-} */
 
 nav a:hover {
   text-decoration: underline;
 }
 
 .active {
-  /* background-color: #014088; */
   border-radius: 3px;
-  /* color: white; */
-  color: rgba(228, 224, 224, 0.668);
+  color: wheat;
 }
 
 .hamburger {
@@ -79,7 +71,7 @@ nav a:hover {
   width: 28px;
   height: 4px;
   margin: 4px 6px;
-  background-color: #014088;
+  background-color: wheat;
   border-radius: 1mm;
 }
 
@@ -88,7 +80,7 @@ nav a:hover {
   width: 20px;
   height: 4px;
   margin: 4px 6px;
-  background-color: #014088;
+  background-color: wheat;
   border-radius: 1mm;
 }
 
@@ -97,83 +89,62 @@ nav a:hover {
   width: 15px;
   height: 4px;
   margin: 4px 6px;
-  background-color: #014088;
+  background-color: white;
   border-radius: 1mm;
 }
 
-/* About Me Styling */
+/* Home Styling */
 main {
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-  transform: translateY(50%);
-}
-
-#content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 90%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-#Me {
-  padding-left: 11rem;
-}
-
-#pictureDiv {
-  display: flex;
-}
-
-#My-picture {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 100%;
-  border-radius: 50%;
-  box-shadow: -1px 1px 4px 8px #429aff57;
 }
 
 #welcome {
   width: 80%;
   max-width: 100%;
-  grid-column: span 2;
+  margin: 0 auto;
+  transform: translateY(160%);
+  text-align: right;
 }
 
 #hi {
-  font: 2.5rem var(--intro-second-line);
-  color: #014088;
+  font: 2.5rem var(--intro-line-font);
+  color: white;
 }
 
 #intro {
-  font: 5rem var(--intro-line-font);
-  color: #014088;
+  font: 7rem var(--intro-line-font);
+  color: wheat;
 }
 
+/* About Me Styling */
 #details {
-  margin: 1rem auto;
-  font: 1.1rem 'Nunito';
-  color: black;
+  max-width: 80%;
+  width: 55%;
+  transform: translate(20%, 190%);
+  margin: 0 auto;
+  font: 1.15rem 'Nunito';
+  color: white;
   line-height: 1.7rem;
   text-align: justify;
 }
 
-/* Frontend Styling */
-
+/* Frontend and Cloud Styling */
 #link-container {
   width: 80%;
   height: 85%;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #429aff57;
+  background-color: rgba(255, 255, 255, 0.241);
   border-radius: 5px;
-  transform: translateY(15%);
+  transform: translateY(10%);
   padding-top: 1rem;
 }
 
 #frontendTitle {
-  font: 1.3rem var(--intro-line-font);
+  font: 1.5rem var(--intro-line-font);
   font-weight: 600;
-  color: #014088;
+  color: black;
   text-align: center;
 }
 
@@ -188,38 +159,37 @@ section>a {
   height: 10rem;
   width: 12rem;
   padding: 4rem 1rem 0 1rem;
-  border: 1px solid #3786df;
   border-radius: 0.9rem;
   text-align: center;
   text-decoration: none;
   color: white;
   font-family: 'Nunito';
   font-size: 1rem;
-  background-color: #014088;
+  background-color: black;
   margin: 1rem;
 }
 
 section>a:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 5px 2px 10px 1px #fcfcfdc9;
+  box-shadow: 2px 2px 10px 1px #fcfcfdc9;
 }
 
 /* media query for small smartphones */
 @media (min-width: 0px) and (max-width: 359px) {
   #logo {
     right: 0;
+    top: -0.3rem;
     font-size: 2.5rem;
     z-index: 10;
     position: absolute;
-    margin-right: 1rem;
-    color: #014088;
+    margin-right: 0.5rem;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    background-color: #014088;
-    width: 60%;
+    background-color: black;
+    width: 80%;
     height: 100vh;
     justify-content: flex-start;
     border-radius: 3px;
@@ -243,7 +213,8 @@ section>a:hover {
   nav a:hover {
     transform: translateX(1rem);
     text-decoration: none;
-    background-color: black;
+    background-color: wheat;
+    color: black;
     border-radius: 3px;
   }
 
@@ -274,72 +245,57 @@ section>a:hover {
     transform: rotate(-45deg) translate(5px, -7px);
   }
 
-  /* About Styling */
-  main {
-    transform: translateY(7%);
-  }
-
-  #content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #Me {
-    margin: 0 auto;
-    padding-left: 0;
-    width: 80%;
-  }
-
-  #My-picture {
-    width: 45%;
+  /* Home Styling */
+  figure {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/Adeyomola-4small.png);
+    position: fixed;
   }
 
   #welcome {
-    margin-top: 0.8rem;
-    width: 100%;
+    width: 85%;
+    transform: translateY(250%);
   }
 
   #hi {
-    font-size: 1.2rem;
-    color: #014088;
-    text-align: center;
+    font: 1.2rem var(--intro-line-font);
   }
 
   #intro {
-    font-size: 2.2rem;
-    color: #014088;
-    text-align: center;
+    font: 2.5rem var(--intro-line-font);
   }
 
+  /* About Me Styling */
   #details {
-    font: 0.8rem 'Nunito';
-    line-height: 1.1rem;
-    text-align: justify;
-  }
-
-  .truncateLinks {
-    color: #014088;
-    font: 0.7rem 'Nunito';
+    max-width: 100%;
+    width: 90%;
+    transform: translate(0, 20%);
+    font: 0.9rem 'Nunito';
+    line-height: 1.5rem;
   }
 
   /* Frontend Styling */
   #link-container {
-    width: 100%;
-    background-color: transparent;
-    transform: translateY(10%);
+    width: 95%;
+    height: 90%;
+    transform: translateY(8%);
+  }
+
+  #frontendTitle {
+    font-size: 1rem;
   }
 
   section {
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 0.8rem;
   }
 
   section>a {
-    height: 5rem;
-    width: 5rem;
+    height: 4.2rem;
+    width: 4.2rem;
     padding-top: 1rem;
-    font-size: 0.6rem;
-    margin: 0.6rem;
+    font-size: 0.4rem;
+    margin: 0.3rem;
   }
 }
 
@@ -347,18 +303,18 @@ section>a:hover {
 @media (min-width: 360px) and (max-width: 760px) {
   #logo {
     right: 0;
+    top: -0.5rem;
     font-size: 2.8rem;
     z-index: 10;
     position: absolute;
-    margin-right: 1rem;
-    color: #014088;
+    margin-right: 0.5rem;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    background-color: #014088;
-    width: 60%;
+    background-color: black;
+    width: 80%;
     height: 100vh;
     justify-content: flex-start;
     border-radius: 3px;
@@ -382,7 +338,8 @@ section>a:hover {
   nav a:hover {
     transform: translateX(0.5rem);
     text-decoration: none;
-    background-color: black;
+    background-color: wheat;
+    color: black;
     border-radius: 3px;
   }
 
@@ -414,61 +371,41 @@ section>a:hover {
     transform: rotate(-45deg) translate(5px, -7px);
   }
 
-  /* About Styling */
-  main {
-    transform: translateY(10%);
-  }
-
-  #content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #Me {
-    margin: 0 auto;
-    padding-left: 0;
-    width: 80%;
-  }
-
-  #My-picture {
-    width: 50%;
+  /* Home Styling */
+  figure {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/Adeyomola-4phablets.png);
+    position: fixed;
   }
 
   #welcome {
-    margin-top: 0.5rem;
-    width: 100%;
+    width: 90%;
+    transform: translateY(350%);
   }
 
   #hi {
-    font-size: 2rem;
-    color: #014088;
-    text-align: center;
+    font: 1.5rem var(--intro-line-font);
   }
 
   #intro {
-    font-size: 2.8rem;
-    color: #014088;
-    text-align: center;
+    font: 3rem var(--intro-line-font);
   }
 
+  /* About Me Styling */
   #details {
-    margin: 1rem auto;
-    font: 1rem 'Nunito';
-    line-height: 1.5rem;
-    text-align: justify;
-  }
-
-  .truncateLinks {
-    color: #014088;
-    text-align: left;
-    font: 0.8rem 'Nunito';
+    max-width: 100%;
+    width: 90%;
+    transform: translate(0, 50%);
+    font: 1.1rem 'Nunito';
+    line-height: 1.7rem;
   }
 
   /* Frontend Styling */
   #link-container {
-    width: 100%;
-    transform: translateY(10%);
-    background-color: transparent;
+    width: 95%;
+    height: 90%;
+    transform: translateY(6%);
   }
 
   section {
@@ -476,8 +413,8 @@ section>a:hover {
   }
 
   section>a {
-    height: 6rem;
-    width: 6rem;
+    height: 5.6rem;
+    width: 5.6rem;
     padding-top: 1rem;
     font-size: 0.7rem;
     margin: 0.6rem;
@@ -488,18 +425,18 @@ section>a:hover {
 @media (min-width: 761px) and (max-width: 1279px) {
   #logo {
     right: 0;
+    top: -0.7rem;
     font-size: 3.8rem;
     z-index: 10;
     position: absolute;
-    margin-right: 1rem;
-    color: #014088;
+    margin-right: 0.5rem;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    background-color: #014088;
-    width: 55%;
+    background-color: black;
+    width: 80%;
     height: 100vh;
     justify-content: flex-start;
     border-radius: 3px;
@@ -524,7 +461,8 @@ section>a:hover {
   nav a:hover {
     transform: translateX(1rem);
     text-decoration: none;
-    background-color: black;
+    background-color: wheat;
+    color: black;
     border-radius: 3px;
   }
 
@@ -556,101 +494,227 @@ section>a:hover {
     transform: rotate(-45deg) translate(5px, -7px);
   }
 
-  /* About Styling */
-  main {
-    transform: translateY(25%);
-  }
-
-  #content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #Me {
-    margin: 0 auto;
-    padding-left: 0;
-    width: 80%;
-  }
-
-  #My-picture {
-    width: 40%;
+  /* Home Styling */
+  figure {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/Adeyomola-4tabs.png);
+    position: fixed;
   }
 
   #welcome {
-    margin-top: 0.5rem;
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    transform: translateY(250%);
   }
 
   #hi {
-    font: 2.5rem var(--intro-second-line);
-    color: #014088;
+    font: 2.5rem var(--intro-line-font);
   }
 
   #intro {
-    font: 3.5rem var(--intro-line-font);
-    color: #014088;
+    font: 6rem var(--intro-line-font);
   }
 
+  /* About Me Styling */
   #details {
-    margin: 1rem auto;
-    border-radius: 0.5rem;
-    font: 1.5rem 'Nunito';
-    color: black;
-    line-height: 2.1rem;
-    text-align: justify;
+    max-width: 100%;
+    width: 80%;
+    transform: translate(0, 150%);
+    font: 1.2rem 'Nunito';
+    line-height: 2rem;
   }
 
   /* Frontend Styling */
   #link-container {
-    width: 100%;
-    background-color: transparent;
+    width: 95%;
+    height: 93%;
+    /* background-color: transparent; */
     transform: translateY(5%);
   }
 
   section {
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
   }
 
   section>a {
-    height: 11rem;
-    width: 11rem;
-    padding-top: 3.5rem;
-    font-size: 1.1rem;
-    margin: 1rem;
+    height: 9rem;
+    width: 9rem;
+    padding-top: 3.1rem;
+    font-size: 0.9rem;
+    margin: 0.9rem;
   }
 }
 
-@media (min-width: 0px) and (max-width: 760px) and (orientation: landscape) {
+@media (min-width: 0px) and (max-width: 600px) and (orientation: landscape) {
 
   body {
-    height: 105vw;
+    height: 75vw;
   }
 
-  #link-container {
-    background-color: transparent;
+  nav {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* Home Styling */
+  figure {
+    background-image: url(/src/Adeyomola-4sland.png);
+  }
+
+  #welcome {
+    transform: translateY(120%);
+  }
+
+  #hi {
+    transform: scale(1.1);
+  }
+
+  #intro {
+    transform: scale(1.1);
+  }
+
+  /* About Me Styling */
+  #details {
+    width: 80%;
+    transform: translate(0, 15%);
+  }
+
+  /* Front and Cloud */
+  section {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
-@media (min-width: 761px) and (max-width: 1023px) and (orientation: landscape) {
+@media (min-width: 601px) and (max-width: 780px) and (orientation: landscape) {
 
   body {
-    height: 95vw;
+    height: 80vw;
   }
 
+  nav {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* Home Styling */
+  figure {
+    background-image: url(/src/Adeyomola-4pland.png);
+  }
+
+  #welcome {
+    transform: translateY(150%);
+  }
+
+  /* About Me Styling */
+  #details {
+    width: 80%;
+    transform: translate(0, 30%);
+  }
+
+  /* Frontend Styling */
   #link-container {
-    background-color: transparent;
+    height: 80%;
+    transform: translateY(10%);
+  }
+
+  section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1023px) and (orientation: landscape) {
+
+  body {
+    height: 90vw;
+  }
+
+  nav {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* Home Styling */
+  figure {
+    background-image: url(/src/Adeyomola-4pland.png);
+  }
+
+  #welcome {
+    transform: translateY(180%);
+  }
+
+  #hi {
+    font-size: 1.5rem;
+  }
+
+  #intro {
+    font-size: 3rem;
+  }
+
+  /* About Me Styling */
+  #details {
+    width: 80%;
+    transform: translate(0, 15%);
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    height: 80%;
+    width: 98%;
+    transform: translateY(10%);
+  }
+
+  section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  section>a {
+    margin: 0.5rem;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
 
   body {
-    height: 74vw;
+    height: 70vw;
   }
 
+  nav {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* Home Styling */
+  figure {
+    background-image: url(/src/Adeyomola-4tland.png);
+  }
+
+  #welcome {
+    transform: translateY(200%);
+  }
+
+  #hi {
+    transform: scale(1);
+  }
+
+  #intro {
+    transform: scale(1);
+  }
+
+  /* About Me Styling */
+  #details {
+    width: 80%;
+    transform: translate(0, 150%);
+  }
+
+  /* Frontend Styling */
   #link-container {
-    background-color: transparent;
+    width: 95%;
+    height: 80%;
+    transform: translateY(10%);
+  }
+
+  section {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

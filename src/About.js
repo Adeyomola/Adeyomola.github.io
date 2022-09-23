@@ -1,5 +1,4 @@
 // import { useState } from "react";
-import Me from "./Me.png";
 
 function About() {
   // const [overflow, setOverFlow] = useState("");
@@ -54,32 +53,17 @@ function About() {
         window.location.hash = "about";
       }}
     >
-      <main>
-        <div id="content">
-          <div id="Me">
-            <div id="pictureDiv">
-              <img src={Me} alt="Adeyomola" id="My-picture" />
-            </div>
-          </div>
-          <div id="welcome">
-            <p id="hi">Hi! Welcome to my page,</p>
-            <p id="intro">I'm Adeyomola.</p>
-            <p id="details">
-              I'm a Pharmacist, Software Engineer, and Writer passionate about
-              creating solutions for the future. I have worked as a Clinical
-              Pharmacist, Research Pharmacist, Community Pharmacist, Copywriter,
-              and Content Writer. These days, I spend time programming. I taught
-              myself some machine learning in 2021 but that was primarily for
-              fun. Early this year, I did some basic front-end (HTML, CSS, and
-              Vanilla JS) as part of a software engineering diploma. But my
-              actual track for the diploma is cloud engineering, and I'm
-              fully-focused on that now. However, from time to time, I teach
-              myself some React JS.
-            </p>
-            {/* <TruncationCondition /> */}
-          </div>
-        </div>
-      </main>
+      <p id="details">
+        I'm a Pharmacist, Software Engineer, and Writer passionate about
+        creating solutions for the future. I have worked as a Clinical
+        Pharmacist, Research Pharmacist, Community Pharmacist, Copywriter, and
+        Content Writer. These days, I spend time programming. I taught myself
+        some machine learning in 2021 but that was primarily for fun. Early this
+        year, I did some basic front-end (HTML, CSS, and Vanilla JS) as part of
+        a software engineering diploma. But my actual track for the diploma is
+        cloud engineering, and I'm fully-focused on that now. However, from time
+        to time, I teach myself some React JS.
+      </p>
     </body>
   );
 }

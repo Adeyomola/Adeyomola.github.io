@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 function Nav() {
-  const [about, setAbout] = useState("active");
+  const [home, setHome] = useState("active");
+  const [about, setAbout] = useState("");
   const [cloud, setCloud] = useState("");
   const [front, setFront] = useState("");
   const [blog, setBlog] = useState("");
@@ -19,7 +20,7 @@ function Nav() {
         <span className="middle"></span>
         <span className="bottom-bun"></span>
       </div>
-      <div id="logo">Ai</div>
+      <div id="logo">ai</div>
       <nav className={nav}>
         <div className="hamburger2" onClick={() => setNav("")}>
           <span className="top-bun"></span>
@@ -27,9 +28,25 @@ function Nav() {
           <span className="bottom-bun"></span>
         </div>
         <a
+          href="#home"
+          className={home}
+          onClick={() => {
+            setHome("active");
+            setAbout("");
+            setCloud("");
+            setFront("");
+            setBlog("");
+            setNav("");
+            setGh("");
+          }}
+        >
+          Home
+        </a>
+        <a
           href="#about"
           className={about}
           onClick={() => {
+            setHome("");
             setAbout("active");
             setCloud("");
             setFront("");
@@ -44,6 +61,7 @@ function Nav() {
           href="#frontend"
           className={front}
           onClick={() => {
+            setHome("");
             setAbout("");
             setCloud("");
             setFront("active");
@@ -58,6 +76,7 @@ function Nav() {
           href="#cloud"
           className={cloud}
           onClick={() => {
+            setHome("");
             setAbout("");
             setCloud("active");
             setFront("");
@@ -73,6 +92,7 @@ function Nav() {
           target="_blank"
           className={blog}
           onClick={() => {
+            setHome("");
             setAbout("");
             setCloud("");
             setFront("");
@@ -88,6 +108,7 @@ function Nav() {
           target="_blank"
           className={gh}
           onClick={() => {
+            setHome("");
             setAbout("");
             setCloud("");
             setFront("");
