@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc4c4bbd.css",
+    "main.css": "/static/css/main.e3b77c96.css",
     "main.js": "/static/js/main.c5bdc5e9.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/Adeyomola-4.png": "/static/media/Adeyomola-4.d9148e54a1eaf2782341.png",
     "index.html": "/index.html",
-    "main.dc4c4bbd.css.map": "/static/css/main.dc4c4bbd.css.map",
+    "main.e3b77c96.css.map": "/static/css/main.e3b77c96.css.map",
     "main.c5bdc5e9.js.map": "/static/js/main.c5bdc5e9.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc4c4bbd.css",
+    "static/css/main.e3b77c96.css",
     "static/js/main.c5bdc5e9.js"
   ]
 }
