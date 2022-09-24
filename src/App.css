@@ -64,6 +64,8 @@ nav a:hover {
 .hamburger {
   display: none;
   position: fixed;
+  top: -0.05rem;
+  padding: 2px 0;
 }
 
 .hamburger .top-bun {
@@ -176,12 +178,16 @@ section>a:hover {
 
 /* media query for small smartphones */
 @media (min-width: 0px) and (max-width: 359px) {
+  body {
+    background: #030303;
+  }
+
   #logo {
     right: 0;
-    top: -0.3rem;
+    top: -0.6rem;
     font-size: 2.5rem;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     margin-right: 0.5rem;
   }
 
@@ -220,8 +226,10 @@ section>a:hover {
 
   .hamburger {
     display: block;
-    margin-top: 2px;
     z-index: 10;
+    background-color: #0c0c0c;
+    width: 100vw;
+    height: 7.5vh;
   }
 
   .hamburger2 span {
@@ -301,12 +309,16 @@ section>a:hover {
 
 /* media query for phablets */
 @media (min-width: 360px) and (max-width: 760px) {
+  body {
+    background: #030303;
+  }
+
   #logo {
     right: 0;
-    top: -0.5rem;
+    top: -0.7rem;
     font-size: 2.8rem;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     margin-right: 0.5rem;
   }
 
@@ -345,9 +357,11 @@ section>a:hover {
 
   .hamburger {
     display: block;
-    margin-top: 2px;
     cursor: pointer;
     z-index: 10;
+    background-color: #0c0c0c;
+    width: 100vw;
+    height: 6vh;
   }
 
   .hamburger2 span {
@@ -423,12 +437,16 @@ section>a:hover {
 
 /* media query for tablets */
 @media (min-width: 761px) and (max-width: 1279px) {
+  body {
+    background: #030303;
+  }
+
   #logo {
     right: 0;
-    top: -0.7rem;
+    top: -0.9rem;
     font-size: 3.8rem;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     margin-right: 0.5rem;
   }
 
@@ -469,6 +487,7 @@ section>a:hover {
   .hamburger {
     display: block;
     margin-top: 5px;
+    margin-left: 5px;
     transform: scale(1.2);
     z-index: 10;
   }
@@ -528,13 +547,11 @@ section>a:hover {
   #link-container {
     width: 95%;
     height: 93%;
-    /* background-color: transparent; */
     transform: translateY(5%);
   }
 
   section {
     grid-template-columns: repeat(3, 1fr);
-    /* padding-top: 2rem; */
   }
 
   section>a {
@@ -555,6 +572,10 @@ section>a:hover {
   nav {
     overflow-y: scroll;
     scroll-behavior: smooth;
+  }
+
+  .hamburger {
+    height: 7vw;
   }
 
   /* Home Styling */
@@ -595,6 +616,10 @@ section>a:hover {
   nav {
     overflow-y: scroll;
     scroll-behavior: smooth;
+  }
+
+  .hamburger {
+    height: 6vw;
   }
 
   /* Home Styling */
