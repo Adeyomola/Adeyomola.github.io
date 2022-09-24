@@ -28,7 +28,7 @@ function Nav() {
           <span className="bottom-bun"></span>
         </div>
         <a
-          href="#home"
+          href="#"
           className={home}
           onClick={() => {
             setHome("active");

@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <body id="home">
+    <body>
       <figure></figure>
       <main>
         <div id="welcome">

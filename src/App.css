@@ -173,7 +173,7 @@ section>a {
 
 section>a:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 2px 2px 10px 1px #fcfcfdc9;
+  box-shadow: 2px 2px 10px 1px wheat;
 }
 
 /* media query for small smartphones */
