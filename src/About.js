@@ -53,17 +53,18 @@ function About() {
         window.location.hash = "about";
       }}
     >
-      <p id="details">
-        I'm a Pharmacist, Software Engineer, and Writer passionate about
-        creating solutions for the future. I have worked as a Clinical
-        Pharmacist, Research Pharmacist, Community Pharmacist, Copywriter, and
-        Content Writer. These days, I spend time programming. I taught myself
-        some machine learning in 2021 but that was primarily for fun. Early this
-        year, I did some basic front-end (HTML, CSS, and Vanilla JS) as part of
-        a software engineering diploma. But my actual track for the diploma is
-        cloud engineering, and I'm fully-focused on that now. However, from time
-        to time, I teach myself some React JS.
-      </p>
+      <div id="aboutDiv">
+        <p id="details">
+          I do not find satisfaction in who I was yesterday; I'm not trying to
+          lose to my past. My goal is to persist on an endless path towards the
+          peak of my existence. So, if there's a problem I cannot solve today,
+          I'll solve it tomorrow or get closer to a solution.
+          <br></br>
+          When I'm not doing Software Engineering, I'm a Pharmacist, a Writer,
+          and i++ other things. I get tired sometimes, and when I do, you'll
+          find me with my face buried in something comical.
+        </p>
+      </div>
     </body>
   );
 }

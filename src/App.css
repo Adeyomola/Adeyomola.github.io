@@ -98,14 +98,16 @@ nav a:hover {
 /* Home Styling */
 main {
   width: 100%;
+  height: 100vh;
   max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #welcome {
   width: 80%;
   max-width: 100%;
   margin: 0 auto;
-  transform: translateY(160%);
   text-align: right;
 }
 
@@ -120,10 +122,18 @@ main {
 }
 
 /* About Me Styling */
+#aboutDiv {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+}
+
 #details {
   max-width: 80%;
   width: 55%;
-  transform: translate(20%, 190%);
+  transform: translateX(20%);
   margin: 0 auto;
   font: 1.15rem 'Nunito';
   color: white;
@@ -137,9 +147,9 @@ main {
   height: 85%;
   max-width: 100%;
   margin: 0 auto;
+  margin-top: 4rem;
   background-color: rgba(255, 255, 255, 0.241);
   border-radius: 5px;
-  transform: translateY(10%);
   padding-top: 1rem;
 }
 
@@ -179,7 +189,7 @@ section>a:hover {
 /* media query for small smartphones */
 @media (min-width: 0px) and (max-width: 359px) {
   body {
-    background: #030303;
+    background: transparent;
   }
 
   #logo {
@@ -259,11 +269,11 @@ section>a:hover {
     height: 100vh;
     background-image: url(/src/Adeyomola-4small.png);
     position: fixed;
+    z-index: -1;
   }
 
   #welcome {
     width: 85%;
-    transform: translateY(250%);
   }
 
   #hi {
@@ -278,16 +288,16 @@ section>a:hover {
   #details {
     max-width: 100%;
     width: 90%;
-    transform: translate(0, 20%);
+    transform: translateX(0);
     font: 0.9rem 'Nunito';
     line-height: 1.5rem;
   }
 
   /* Frontend Styling */
   #link-container {
+    margin-top: 2rem;
     width: 95%;
     height: 90%;
-    transform: translateY(8%);
   }
 
   #frontendTitle {
@@ -299,10 +309,10 @@ section>a:hover {
   }
 
   section>a {
-    height: 4.2rem;
-    width: 4.2rem;
+    height: 4rem;
+    width: 4rem;
     padding-top: 1rem;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     margin: 0.3rem;
   }
 }
@@ -310,7 +320,7 @@ section>a:hover {
 /* media query for phablets */
 @media (min-width: 360px) and (max-width: 760px) {
   body {
-    background: #030303;
+    background: transparent;
   }
 
   #logo {
@@ -391,11 +401,11 @@ section>a:hover {
     height: 100vh;
     background-image: url(/src/Adeyomola-4phablets.png);
     position: fixed;
+    z-index: -1;
   }
 
   #welcome {
     width: 90%;
-    transform: translateY(350%);
   }
 
   #hi {
@@ -410,16 +420,16 @@ section>a:hover {
   #details {
     max-width: 100%;
     width: 90%;
-    transform: translate(0, 50%);
+    transform: translateX(0);
     font: 1.1rem 'Nunito';
     line-height: 1.7rem;
   }
 
   /* Frontend Styling */
   #link-container {
+    margin-top: 3rem;
     width: 95%;
     height: 90%;
-    transform: translateY(6%);
   }
 
   section {
@@ -438,7 +448,7 @@ section>a:hover {
 /* media query for tablets */
 @media (min-width: 761px) and (max-width: 1279px) {
   body {
-    background: #030303;
+    background: transparent;
   }
 
   #logo {
@@ -519,11 +529,11 @@ section>a:hover {
     height: 100vh;
     background-image: url(/src/Adeyomola-4tabs.png);
     position: fixed;
+    z-index: -1;
   }
 
   #welcome {
     width: 90%;
-    transform: translateY(250%);
   }
 
   #hi {
@@ -538,7 +548,7 @@ section>a:hover {
   #details {
     max-width: 100%;
     width: 80%;
-    transform: translate(0, 150%);
+    transform: translateX(0);
     font: 1.2rem 'Nunito';
     line-height: 2rem;
   }
@@ -546,27 +556,26 @@ section>a:hover {
   /* Frontend Styling */
   #link-container {
     width: 95%;
-    height: 93%;
-    transform: translateY(5%);
+    height: 90%;
+    margin-top: 2rem;
   }
 
   section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   section>a {
-    height: 9rem;
-    width: 9rem;
-    padding-top: 3.1rem;
+    height: 8.5rem;
+    width: 8.5rem;
+    padding-top: 2.5rem;
     font-size: 0.9rem;
     margin: 0.9rem;
   }
 }
 
 @media (min-width: 0px) and (max-width: 600px) and (orientation: landscape) {
-
   body {
-    height: 75vw;
+    height: 65vw;
   }
 
   nav {
@@ -575,16 +584,12 @@ section>a:hover {
   }
 
   .hamburger {
-    height: 7vw;
+    height: 5vw;
   }
 
   /* Home Styling */
   figure {
     background-image: url(/src/Adeyomola-4sland.png);
-  }
-
-  #welcome {
-    transform: translateY(120%);
   }
 
   #hi {
@@ -598,60 +603,29 @@ section>a:hover {
   /* About Me Styling */
   #details {
     width: 80%;
-    transform: translate(0, 15%);
+    font-size: 0.9rem;
   }
 
   /* Front and Cloud */
-  section {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-@media (min-width: 601px) and (max-width: 780px) and (orientation: landscape) {
-
-  body {
-    height: 80vw;
-  }
-
-  nav {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-
-  .hamburger {
-    height: 6vw;
-  }
-
-  /* Home Styling */
-  figure {
-    background-image: url(/src/Adeyomola-4pland.png);
-  }
-
-  #welcome {
-    transform: translateY(150%);
-  }
-
-  /* About Me Styling */
-  #details {
-    width: 80%;
-    transform: translate(0, 30%);
-  }
-
-  /* Frontend Styling */
   #link-container {
-    height: 80%;
-    transform: translateY(10%);
+    height: 50vw;
   }
 
   section {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  section>a {
+    height: 4rem;
+    width: 4rem;
+    font-size: 0.5rem;
+    margin: 0.3rem;
+  }
 }
 
-@media (min-width: 780px) and (max-width: 1023px) and (orientation: landscape) {
-
+@media (min-width: 601px) and (max-width: 1023px) and (orientation: landscape) {
   body {
-    height: 90vw;
+    height: 55vw;
   }
 
   nav {
@@ -662,10 +636,6 @@ section>a:hover {
   /* Home Styling */
   figure {
     background-image: url(/src/Adeyomola-4pland.png);
-  }
-
-  #welcome {
-    transform: translateY(180%);
   }
 
   #hi {
@@ -678,15 +648,13 @@ section>a:hover {
 
   /* About Me Styling */
   #details {
-    width: 80%;
-    transform: translate(0, 15%);
+    font-size: 1rem;
   }
 
   /* Frontend Styling */
   #link-container {
-    height: 80%;
-    width: 98%;
-    transform: translateY(10%);
+    margin-top: 5rem;
+    height: 45vw;
   }
 
   section {
@@ -694,52 +662,41 @@ section>a:hover {
   }
 
   section>a {
-    margin: 0.5rem;
+    height: 5.1rem;
+    width: 5.1rem;
+    padding-top: 1rem;
+    font-size: 0.7rem;
+    margin: 0.4rem;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
-
-  body {
-    height: 70vw;
-  }
-
-  nav {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
 
   /* Home Styling */
   figure {
     background-image: url(/src/Adeyomola-4tland.png);
   }
 
-  #welcome {
-    transform: translateY(200%);
-  }
-
-  #hi {
-    transform: scale(1);
-  }
-
-  #intro {
-    transform: scale(1);
-  }
-
   /* About Me Styling */
   #details {
-    width: 80%;
-    transform: translate(0, 150%);
+    width: 55%;
+    transform: translateX(30%);
   }
 
   /* Frontend Styling */
   #link-container {
-    width: 95%;
-    height: 80%;
-    transform: translateY(10%);
+    margin-top: 1rem;
   }
 
   section {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  section>a {
+    height: 8.5rem;
+    width: 8.5rem;
+    padding-top: 2.5rem;
+    font-size: 0.9rem;
+    margin: 0.9rem;
   }
 }
