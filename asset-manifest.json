@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e91875c8.css",
-    "main.js": "/static/js/main.65e9c57f.js",
+    "main.css": "/static/css/main.b0ec6259.css",
+    "main.js": "/static/js/main.fbdca29a.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/Adeyomola-4tabs.webp": "/static/media/Adeyomola-4tabs.2e339853a99118de30a2.webp",
     "static/media/Adeyomola-4.webp": "/static/media/Adeyomola-4.1f10544829a9a24639f0.webp",
@@ -11,12 +11,12 @@
     "static/media/Adeyomola-4pland.webp": "/static/media/Adeyomola-4pland.6c3ca07276a446031002.webp",
     "static/media/Adeyomola-4sland.webp": "/static/media/Adeyomola-4sland.89f6287a76f7f455bf81.webp",
     "index.html": "/index.html",
-    "main.e91875c8.css.map": "/static/css/main.e91875c8.css.map",
-    "main.65e9c57f.js.map": "/static/js/main.65e9c57f.js.map",
+    "main.b0ec6259.css.map": "/static/css/main.b0ec6259.css.map",
+    "main.fbdca29a.js.map": "/static/js/main.fbdca29a.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e91875c8.css",
-    "static/js/main.65e9c57f.js"
+    "static/css/main.b0ec6259.css",
+    "static/js/main.fbdca29a.js"
   ]
 }
