@@ -1,10 +1,11 @@
 import { useState } from "react";
+// import { NavLink } from "react-router-dom";
 
 function Nav() {
   const [home, setHome] = useState("active");
   const [about, setAbout] = useState("");
   const [cloud, setCloud] = useState("");
-  const [front, setFront] = useState("");
+  // const [front, setFront] = useState("");
   const [blog, setBlog] = useState("");
   const [gh, setGh] = useState("");
   const [nav, setNav] = useState("");
@@ -27,6 +28,12 @@ function Nav() {
           <span className="middle"></span>
           <span className="bottom-bun"></span>
         </div>
+        {/* <NavLink to="/" exact>
+          Home
+        </NavLink>
+        <NavLink to="/about">About Me</NavLink>
+        <NavLink to="/cloud">Projects</NavLink>
+        <NavLink to="/writing">Technical Writing</NavLink> */}
         <a
           href="#"
           className={home}
@@ -34,7 +41,7 @@ function Nav() {
             setHome("active");
             setAbout("");
             setCloud("");
-            setFront("");
+            // setFront("");
             setBlog("");
             setNav("");
             setGh("");
@@ -49,7 +56,7 @@ function Nav() {
             setHome("");
             setAbout("active");
             setCloud("");
-            setFront("");
+            // setFront("");
             setBlog("");
             setNav("");
             setGh("");
@@ -58,6 +65,21 @@ function Nav() {
           About Me
         </a>
         <a
+          href="#cloud"
+          className={cloud}
+          onClick={() => {
+            setHome("");
+            setAbout("");
+            setCloud("active");
+            // setFront("");
+            setBlog("");
+            setNav("");
+            setGh("");
+          }}
+        >
+          Projects
+        </a>
+        {/* <a
           href="#frontend"
           className={front}
           onClick={() => {
@@ -71,49 +93,27 @@ function Nav() {
           }}
         >
           Front-End Engineering
-        </a>
+        </a> */}
         <a
-          href="#cloud"
-          className={cloud}
-          onClick={() => {
-            setHome("");
-            setAbout("");
-            setCloud("active");
-            setFront("");
-            setBlog("");
-            setNav("");
-            setGh("");
-          }}
-        >
-          Cloud Engineering
-        </a>
-        <a
-          href="https://adeyomoladev.medium.com/"
-          target="_blank"
+          href="#writing"
           className={blog}
           onClick={() => {
             setHome("");
             setAbout("");
             setCloud("");
-            setFront("");
+            // setFront("");
             setNav("");
             setBlog("active");
             setGh("");
           }}
         >
-          Blog Articles
+          Technical Writing
         </a>
         <a
           href="https://github.com/adeyomola"
           target="_blank"
           className={gh}
           onClick={() => {
-            setHome("");
-            setAbout("");
-            setCloud("");
-            setFront("");
-            setNav("");
-            setBlog("");
             setGh("active");
           }}
         >

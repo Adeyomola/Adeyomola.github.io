@@ -55,14 +55,16 @@ function About() {
     >
       <div id="aboutDiv">
         <p id="details">
-          I do not find satisfaction in who I was yesterday; I'm not trying to
-          lose to my past. My goal is to persist on an endless path towards the
-          peak of my existence. So, if there's a problem I cannot solve today,
-          I'll solve it tomorrow or get closer to a solution.
+          I'm a DevOps Engineer driven by the will to conquer yesterday. So, if
+          there's a problem I cannot solve today, I'll solve it tomorrow or get
+          closer to a solution.
           <br></br>
           When I'm not doing Software Engineering, I'm a Pharmacist, a Writer,
           and i++ other things. I get tired sometimes, and when I do, you'll
-          find me with my face buried in something comical.
+          find me with my face buried in something comical. &#128523;
+          <br></br>
+          <br></br>
+          <em></em>
         </p>
       </div>
     </body>
