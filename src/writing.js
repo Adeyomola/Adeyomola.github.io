@@ -3,9 +3,9 @@ function Writing() {
     <>
       <body
         id="writing"
-        onPointerEnter={() => {
-          window.location.hash = "writing";
-        }}
+        // onPointerEnter={() => {
+        //   window.location.hash = "writing";
+        // }}
       >
         <main>
           <div id="link-container">

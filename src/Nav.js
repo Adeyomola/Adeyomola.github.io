@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { NavLink } from "react-router-dom";
 
 function Nav() {
   const [home, setHome] = useState("active");
@@ -28,12 +27,7 @@ function Nav() {
           <span className="middle"></span>
           <span className="bottom-bun"></span>
         </div>
-        {/* <NavLink to="/" exact>
-          Home
-        </NavLink>
-        <NavLink to="/about">About Me</NavLink>
-        <NavLink to="/cloud">Projects</NavLink>
-        <NavLink to="/writing">Technical Writing</NavLink> */}
+
         <a
           href="#"
           className={home}

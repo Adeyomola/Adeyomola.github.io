@@ -3,10 +3,9 @@ function Cloud() {
     <>
       <body
         id="cloud"
-        data-id="cloud"
-        onPointerEnter={() => {
-          window.location.hash = "cloud";
-        }}
+        // onPointerEnter={() => {
+        //   window.location.hash = "cloud";
+        // }}
       >
         <main>
           <div id="link-container">
@@ -51,11 +50,21 @@ function Cloud() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Terraform - EC2 Instances Behind ALB
+                Terraform - Ansible: EC2 Instances Behind ALB
+              </a>
+              <a
+                href="https://github.com/Adeyomola/docker-compose-LAMP"
+                target="_blank"
+              >
+                Docker Compose Configuration and Dockerfile for a LAMP Blog
+              </a>
+              <a
+                href="https://github.com/Adeyomola/kubernetes-demo"
+                target="_blank"
+              >
+                Kubernetes Manifest
               </a>
               {/* <a href="" target="_blank"></a>
-              <a href="" target="_blank"></a>
-              <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>
