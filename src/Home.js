@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 function Home() {
   return (
     <>
@@ -9,6 +11,7 @@ function Home() {
             <p id="intro">I'm Adeyomola</p>
           </div>
         </main>
+        {/* <div style={{ color: "white" }}> Visits: {visit} </div> */}
       </body>
     </>
   );

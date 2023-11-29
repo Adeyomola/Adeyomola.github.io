@@ -1,12 +1,15 @@
 import { useState } from "react";
 
 function Nav() {
-  const [home, setHome] = useState("active");
-  const [about, setAbout] = useState("");
-  const [cloud, setCloud] = useState("");
-  // const [front, setFront] = useState("");
-  const [blog, setBlog] = useState("");
-  const [gh, setGh] = useState("");
+  const [nav_state, set_nav_state] = useState({
+    home: "active",
+    about: "",
+    cloud: "",
+    skills: "",
+    writing: "",
+    gh: "",
+    front: "",
+  });
   const [nav, setNav] = useState("");
 
   return (
@@ -27,78 +30,56 @@ function Nav() {
           <span className="middle"></span>
           <span className="bottom-bun"></span>
         </div>
-
         <a
-          href="#"
-          className={home}
+          href="/#"
+          className={nav_state.home}
           onClick={() => {
-            setHome("active");
-            setAbout("");
-            setCloud("");
-            // setFront("");
-            setBlog("");
-            setNav("");
-            setGh("");
+            set_nav_state({ home: "active" });
           }}
         >
           Home
         </a>
         <a
           href="#about"
-          className={about}
+          className={nav_state.about}
           onClick={() => {
-            setHome("");
-            setAbout("active");
-            setCloud("");
-            // setFront("");
-            setBlog("");
-            setNav("");
-            setGh("");
+            set_nav_state({ about: "active" });
           }}
         >
           About Me
         </a>
         <a
-          href="#cloud"
-          className={cloud}
+          href="#skills"
+          className={nav_state.skills}
           onClick={() => {
-            setHome("");
-            setAbout("");
-            setCloud("active");
-            // setFront("");
-            setBlog("");
-            setNav("");
-            setGh("");
+            set_nav_state({ skills: "active" });
           }}
         >
-          Projects
+          Skills
+        </a>
+        <a
+          href="#cloud"
+          className={nav_state.cloud}
+          onClick={() => {
+            set_nav_state({ cloud: "active" });
+          }}
+        >
+          DevOps
         </a>
         {/* <a
           href="#frontend"
-          className={front}
+          className={nav_state.front}
           onClick={() => {
-            setHome("");
-            setAbout("");
-            setCloud("");
-            setFront("active");
-            setBlog("");
-            setNav("");
-            setGh("");
+            set_nav_state({ front: "active" });
           }}
         >
-          Front-End Engineering
+          Web Dev
         </a> */}
         <a
           href="#writing"
-          className={blog}
+          className={nav_state.writing}
           onClick={() => {
-            setHome("");
-            setAbout("");
-            setCloud("");
-            // setFront("");
-            setNav("");
-            setBlog("active");
-            setGh("");
+            set_nav_state({ writing: "active" });
           }}
         >
           Technical Writing
@@ -106,9 +87,10 @@ function Nav() {
         <a
           href="https://github.com/adeyomola"
           target="_blank"
-          className={gh}
+          rel="noreferrer"
+          className={nav_state.gh}
           onClick={() => {
-            setGh("active");
+            set_nav_state({ gh: "active" });
           }}
         >
           Github

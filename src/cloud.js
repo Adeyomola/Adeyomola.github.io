@@ -11,6 +11,50 @@ function Cloud() {
           <div id="link-container">
             <section>
               <a
+                href="https://github.com/Adeyomola/continuous-delivery-using-AWS-codepipeline-codebuild-beanstalk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Continuous Delivery with AWS CodePipeline, CodeBuild, and
+                BeanStalk
+              </a>
+              <a
+                href="https://github.com/Adeyomola/cms-azure-pipeline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Azure DevOps CI/CD Pipeline for a Content Management System
+              </a>
+              <a
+                href="https://github.com/Adeyomola/serverless-qr-code-API-AWS-Lambda"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Serverless-QR-code-API-AWS-Lambda-S3
+              </a>
+              <a
+                href="https://github.com/adeyomola/content-management-system"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Jenkins CI/CD Pipeline for a Content Management System
+              </a>
+              <a
+                href="https://github.com/Adeyomola/exam-cicd"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Jenkins CI/CD Pipeline for a microservices application and a
+                blog API on EKS Clusters
+              </a>
+              <a
+                href="https://github.com/Adeyomola/ansible-provision-ec2-behind-alb"
+                target="_blank"
+                rel="norefferer"
+              >
+                Ansible for Stateful Provisioning of AWS Services
+              </a>
+              <a
                 href="https://github.com/Adeyomola/recycle_bin"
                 target="_blank"
                 rel="noreferrer"
@@ -18,55 +62,48 @@ function Cloud() {
                 Recycle Bin for Linux Terminals
               </a>
               <a
-                href="https://github.com/Adeyomola/RAM_Usage_Log_Script"
+                href="https://github.com/Adeyomola/terraform-ansible-ec2-iac"
                 target="_blank"
                 rel="noreferrer"
               >
-                RAM Usage Log Script
+                Terraform + Ansible: Deploying EC2 Instances Behind ALB
               </a>
               <a
                 href="https://github.com/Adeyomola/LAMP-Deployment-Ansible"
                 target="_blank"
                 rel="noreferrer"
               >
-                LAMP Deployment Ansible
+                LAMP Stack Deployed on an EC2 Instance Using Ansible
               </a>
               <a
-                href="https://github.com/Adeyomola/PostgresQL-SetUp-Script"
+                href="https://github.com/Adeyomola/renniehair"
                 target="_blank"
                 rel="noreferrer"
               >
-                PostgresQL SetUp Script
+                Rennie Hair (Hairstylist Appointment Website)
               </a>
               <a
-                href="https://github.com/Adeyomola/ansible-provision-ec2-behind-alb"
+                href="https://github.com/Adeyomola/adeyomola.github.io"
                 target="_blank"
                 rel="noreferrer"
               >
-                Ansible IAC - Private EC2 Instances Behind an ALB
-              </a>
-              <a
-                href="https://github.com/Adeyomola/terraform-ansible-ec2-iac"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Terraform - Ansible: EC2 Instances Behind ALB
+                Portfolio Website
               </a>
               <a
                 href="https://github.com/Adeyomola/docker-compose-LAMP"
                 target="_blank"
+                rel="noreferrer"
               >
                 Docker Compose Configuration and Dockerfile for a LAMP Blog
               </a>
               <a
-                href="https://github.com/Adeyomola/kubernetes-demo"
+                href="https://github.com/Adeyomola/monitoring"
                 target="_blank"
+                rel="noreferrer"
               >
-                Kubernetes Manifest
+                Prometheus, Grafana, AlertManager, and Slack Setup
               </a>
               {/* <a href="" target="_blank"></a>
-              <a href="" target="_blank"></a>
-              <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>
               <a href="" target="_blank"></a> */}
             </section>

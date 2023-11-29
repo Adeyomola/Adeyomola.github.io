@@ -131,15 +131,55 @@ main {
   align-items: center;
 }
 
-#details {
+#details,
+#talk {
   max-width: 80%;
   width: 55%;
   transform: translateX(20%);
   margin: 0 auto;
-  font: 1.25rem 'Nunito';
+  font: 1.15rem 'Nunito';
   color: white;
   line-height: 1.9rem;
   text-align: justify;
+}
+
+#talk {
+  transform: translateX(0%);
+  border-bottom: none;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  font-style: italic;
+}
+
+thead>tr>td {
+  text-align: center;
+}
+
+td {
+  font: 'Roboto';
+  color: wheat;
+  line-height: 1.9rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid wheat;
+}
+
+td:first-child {
+  font: 1rem 'Nunito';
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: white;
+}
+
+#head {
+  font-size: 1.25rem;
 }
 
 /* Frontend and Cloud Styling */

@@ -2,7 +2,8 @@ import "./App.css";
 import Nav from "./Nav";
 import Home from "./Home";
 import About from "./About";
-// import Front from "./frontend";
+import Skills from "./Skills";
+import Front from "./frontend";
 import Cloud from "./cloud";
 import Writing from "./writing";
 
@@ -12,7 +13,9 @@ function App() {
       <Nav />
       <Home />
       <About />
+      <Skills />
       <Cloud />
+      {/* <Front /> */}
       <Writing />
     </>
   );
