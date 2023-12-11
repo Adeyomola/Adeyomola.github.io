@@ -1,11 +1,6 @@
 function About() {
   return (
-    <body
-      id="about"
-      // onPointerEnter={() => {
-      //   window.location.hash = "about";
-      // }}
-    >
+    <main id="about">
       <div id="aboutDiv">
         <div id="details">
           <table>
@@ -36,7 +31,7 @@ function About() {
           </table>
         </div>
       </div>
-    </body>
+    </main>
   );
 }
 

@@ -1,14 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 function Nav() {
   const [nav_state, set_nav_state] = useState({
-    home: "active",
-    about: "",
-    cloud: "",
-    skills: "",
-    writing: "",
     gh: "",
-    front: "",
   });
   const [nav, setNav] = useState("");
 
@@ -30,60 +25,61 @@ function Nav() {
           <span className="middle"></span>
           <span className="bottom-bun"></span>
         </div>
-        <a
-          href="/#"
-          className={nav_state.home}
-          onClick={() => {
-            set_nav_state({ home: "active" });
-          }}
+        <Link
+          to="#"
+          href="#"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={50}
+          hashSpy={true}
         >
           Home
-        </a>
-        <a
+        </Link>
+        <Link
+          to="about"
           href="#about"
-          className={nav_state.about}
-          onClick={() => {
-            set_nav_state({ about: "active" });
-          }}
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={50}
+          hashSpy={true}
         >
-          About Me
-        </a>
-        <a
+          About
+        </Link>
+        <Link
+          to="skills"
           href="#skills"
-          className={nav_state.skills}
-          onClick={() => {
-            set_nav_state({ skills: "active" });
-          }}
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={50}
+          hashSpy={true}
         >
           Skills
-        </a>
-        <a
+        </Link>
+        <Link
+          to="cloud"
           href="#cloud"
-          className={nav_state.cloud}
-          onClick={() => {
-            set_nav_state({ cloud: "active" });
-          }}
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={50}
+          hashSpy={true}
         >
           DevOps
-        </a>
-        {/* <a
-          href="#frontend"
-          className={nav_state.front}
-          onClick={() => {
-            set_nav_state({ front: "active" });
-          }}
-        >
-          Web Dev
-        </a> */}
-        <a
+        </Link>
+        <Link
+          to="writing"
           href="#writing"
-          className={nav_state.writing}
-          onClick={() => {
-            set_nav_state({ writing: "active" });
-          }}
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={50}
+          hashSpy={true}
         >
           Technical Writing
-        </a>
+        </Link>
         <a
           href="https://github.com/adeyomola"
           target="_blank"

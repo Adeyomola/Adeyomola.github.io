@@ -1,9 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-
 function Home() {
   return (
     <>
-      <body id="#">
+      <main id="#">
         <figure></figure>
         <main>
           <div id="welcome">
@@ -12,7 +10,7 @@ function Home() {
           </div>
         </main>
         {/* <div style={{ color: "white" }}> Visits: {visit} </div> */}
-      </body>
+      </main>
     </>
   );
 }

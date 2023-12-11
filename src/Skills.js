@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <body id="skills">
+    <main id="skills">
       <div id="aboutDiv">
         <div id="details">
           <table id="table">
@@ -41,7 +41,7 @@ function Skills() {
           </table>
         </div>
       </div>
-    </body>
+    </main>
   );
 }
 
