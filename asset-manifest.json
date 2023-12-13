@@ -1,15 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.da758365.css",
-    "main.js": "/static/js/main.47b24598.js",
+    "main.css": "/static/css/main.3ea704c5.css",
+    "main.js": "/static/js/main.7c6efbd4.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/kubernetes.webp": "/static/media/kubernetes.f8bc934782853727130d.webp",
+    "static/media/prometheus.webp": "/static/media/prometheus.a78f7ddf367791413ea1.webp",
+    "static/media/flask.webp": "/static/media/flask.2fcb05be118b25b71a33.webp",
+    "static/media/aws.webp": "/static/media/aws.6ef5b5256ff3b4374f5c.webp",
+    "static/media/python.webp": "/static/media/python.78e150dece815d4926b4.webp",
+    "static/media/azure.webp": "/static/media/azure.bdd80b56079d5b11f98b.webp",
+    "static/media/JS.webp": "/static/media/JS.61d32d3c735376aeca88.webp",
+    "static/media/Html5.webp": "/static/media/Html5.abaa165f5bfcf8342fac.webp",
+    "static/media/CSS3.webp": "/static/media/CSS3.848b5fd109011737d5cf.webp",
+    "static/media/git.webp": "/static/media/git.41f245deeff0012cdc0b.webp",
+    "static/media/bash.webp": "/static/media/bash.db1a38a95af5d323bef2.webp",
+    "static/media/jenkins.webp": "/static/media/jenkins.b5a7b0c82efe7f2b7dc1.webp",
+    "static/media/devops.webp": "/static/media/devops.fb930b45e2678c10f598.webp",
+    "static/media/react.webp": "/static/media/react.76467529bda8e4c52c88.webp",
+    "static/media/ansible.webp": "/static/media/ansible.0f39d418e94bae46da96.webp",
+    "static/media/SQL.webp": "/static/media/SQL.de5dc0361351ff0138af.webp",
+    "static/media/terraform.webp": "/static/media/terraform.580ff7cef1e4c4878eaf.webp",
+    "static/media/elastic.webp": "/static/media/elastic.2af74ce4c22dac0a9633.webp",
     "index.html": "/index.html",
-    "main.da758365.css.map": "/static/css/main.da758365.css.map",
-    "main.47b24598.js.map": "/static/js/main.47b24598.js.map",
+    "main.3ea704c5.css.map": "/static/css/main.3ea704c5.css.map",
+    "main.7c6efbd4.js.map": "/static/js/main.7c6efbd4.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da758365.css",
-    "static/js/main.47b24598.js"
+    "static/css/main.3ea704c5.css",
+    "static/js/main.7c6efbd4.js"
   ]
 }
