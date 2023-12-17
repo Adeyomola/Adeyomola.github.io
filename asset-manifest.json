@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e339754.css",
-    "main.js": "/static/js/main.fc9ea56a.js",
+    "main.css": "/static/css/main.5615001f.css",
+    "main.js": "/static/js/main.4e15d81b.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/kubernetes.webp": "/static/media/kubernetes.f8bc934782853727130d.webp",
     "static/media/prometheus.webp": "/static/media/prometheus.a78f7ddf367791413ea1.webp",
@@ -9,6 +9,7 @@
     "static/media/aws.webp": "/static/media/aws.6ef5b5256ff3b4374f5c.webp",
     "static/media/python.webp": "/static/media/python.78e150dece815d4926b4.webp",
     "static/media/azure.webp": "/static/media/azure.bdd80b56079d5b11f98b.webp",
+    "static/media/pencil.png": "/static/media/pencil.fad0c8135bfb61d6cfc1.png",
     "static/media/JS.webp": "/static/media/JS.61d32d3c735376aeca88.webp",
     "static/media/Html5.webp": "/static/media/Html5.abaa165f5bfcf8342fac.webp",
     "static/media/CSS3.webp": "/static/media/CSS3.848b5fd109011737d5cf.webp",
@@ -22,12 +23,12 @@
     "static/media/terraform.webp": "/static/media/terraform.580ff7cef1e4c4878eaf.webp",
     "static/media/elastic.webp": "/static/media/elastic.2af74ce4c22dac0a9633.webp",
     "index.html": "/index.html",
-    "main.8e339754.css.map": "/static/css/main.8e339754.css.map",
-    "main.fc9ea56a.js.map": "/static/js/main.fc9ea56a.js.map",
+    "main.5615001f.css.map": "/static/css/main.5615001f.css.map",
+    "main.4e15d81b.js.map": "/static/js/main.4e15d81b.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e339754.css",
-    "static/js/main.fc9ea56a.js"
+    "static/css/main.5615001f.css",
+    "static/js/main.4e15d81b.js"
   ]
 }
