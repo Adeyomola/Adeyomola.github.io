@@ -1,10 +1,14 @@
 function Front() {
   return (
     <>
+      <p id="title">Web Development</p>
       <main id="frontend">
         <div id="link-container">
-          {/* <p id="frontendTitle">Front-End Projects</p> */}
           <section>
+            <a href="https://github.com/Adeyomola/sentio" target="_blank">
+              Sentio - A Content Management Website
+            </a>
+            <a href="/#">Portfolio Website</a>
             <a href="https://rennie.hair" target="_blank">
               HairStylist Appointment Website (Renniehair)
             </a>

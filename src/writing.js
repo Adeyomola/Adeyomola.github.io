@@ -1,9 +1,9 @@
 function Writing() {
   return (
     <>
+      <p id="title">Technical Writing</p>
       <main id="writing">
         <div id="link-container">
-          <p id="frontendTitle"></p>
           <section>
             <a
               href="https://adeyomoladev.medium.com/"

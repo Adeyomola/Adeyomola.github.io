@@ -1,740 +1,540 @@
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Nunito:wght@200&family=Quicksand:wght@300;500&family=Roboto:wght@100&display=swap');
 
 * {
-  --intro-line-font: 'Quicksand';
-  --intro-second-line: 'Caveat';
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    --quicksand: 'Quicksand';
+    --caveat: 'Caveat';
+    --nunito: 'Nunito';
+    --blue: rgb(0, 0, 134);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 html,
 body {
-  font-size: 15px;
-  width: 100%;
-  height: 100vh;
-  scroll-behavior: smooth;
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 
-body {
-  background-image: url(/src/Adeyomola-4.webp);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/* nav */
+#logo {
+    position: fixed;
+    padding-left: 0.5rem;
+    align-self: flex-start;
+    width: 15%;
+    max-width: 15%;
+    font: 2.4rem var(--quicksand);
+    font-weight: 900;
+    color: white;
+    background-color: var(--blue);
+    z-index: 20;
 }
 
 nav {
-  position: fixed;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 10;
-  background-color: #030303;
-}
-
-#logo {
-  position: fixed;
-  font: 3rem var(--intro-line-font);
-  font-weight: 900;
-  color: wheat;
-  margin-left: 1rem;
-  text-align: center;
-  z-index: 20;
-  top: -0.1rem;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    background-color: var(--blue);
 }
 
 nav a {
-  margin: 5px;
-  text-decoration: none;
-  font: 1rem var(--intro-line-font);
-  color: white;
-  padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    max-width: 15%;
+    height: 3rem;
+    text-decoration: none;
+    font: 900 1rem var(--quicksand);
+    color: black;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    scale: 1.1;
 }
 
 .active {
-  border-radius: 3px;
-  color: wheat;
+    border-radius: 3px;
+    background-color: white;
 }
 
-.hamburger {
-  display: none;
-  position: fixed;
-  top: -0.05rem;
-  padding: 2px 0;
+#nav-details {
+    position: fixed;
+    top: -3rem;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    background-color: var(--blue);
 }
 
-.hamburger .top-bun {
-  display: block;
-  width: 28px;
-  height: 4px;
-  margin: 4px 6px;
-  background-color: wheat;
-  border-radius: 1mm;
+#nav-details>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: 0.6rem var(--quicksand);
+    color: white;
+    width: 15%;
+    height: 3rem;
 }
 
-.hamburger .middle {
-  display: block;
-  width: 20px;
-  height: 4px;
-  margin: 4px 6px;
-  background-color: wheat;
-  border-radius: 1mm;
+.shownav {
+    transform: translateY(197%);
+    transition: 1s;
 }
 
-.hamburger .bottom-bun {
-  display: block;
-  width: 15px;
-  height: 4px;
-  margin: 4px 6px;
-  background-color: white;
-  border-radius: 1mm;
+/* background */
+#background {
+    display: none;
+    z-index: -100;
+    position: fixed;
+    right: 0;
+    top: -19rem;
+    animation: translate 8s ease-in-out -2s infinite;
 }
 
-/* Home Styling */
+#background1 {
+    display: none;
+    z-index: -100;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    animation: translate 3s ease-in-out -2s infinite;
+}
+
+@keyframes translate {
+    0% {
+        transform: translateY(-3%);
+    }
+
+    50% {
+        transform: translateY(3%);
+    }
+
+    100% {
+        transform: translateY(-3%);
+    }
+}
+
+/* home */
+
 main {
-  width: 100%;
-  height: 100vh;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 40px 20px 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    border-bottom: 1px solid grey;
+    align-items: center;
 }
 
 #welcome {
-  width: 80%;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: right;
-}
-
-#hi {
-  font: 2.5rem var(--intro-line-font);
-  color: white;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 #intro {
-  font: 7rem var(--intro-line-font);
-  color: wheat;
+    font: 3rem var(--quicksand);
+    color: var(--blue);
 }
 
-/* About Me Styling */
-#aboutDiv {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-  align-items: center;
-}
-
-#details,
-#talk {
-  max-width: 80%;
-  width: 55%;
-  transform: translateX(20%);
-  margin: 0 auto;
-  font: 1.15rem 'Nunito';
-  color: white;
-  line-height: 1.9rem;
-  text-align: justify;
+#hi {
+    font: 1.3rem var(--quicksand);
 }
 
 #talk {
-  transform: translateX(0%);
-  border-bottom: none;
-  font-style: italic;
+    padding: 0.5rem 0;
+    font: 600 0.8rem var(--nunito);
+}
+
+#logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+#logos>img {
+    width: 10%;
+    height: 10%;
+    margin: 0.1rem;
+}
+
+#logos>img:hover {
+    scale: 1.2;
+}
+
+/* Skills */
+#skills {
+    display: flex;
+    justify-content: center;
+}
+
+#Skillsheader {
+    font: 1.5rem var(--quicksand);
+    font-weight: 600;
+    color: black;
+    text-align: center;
 }
 
 table {
-  width: 100%;
-  font-style: italic;
+    width: 80%;
+    transform: translateX(10%);
 }
 
 thead>tr>td {
-  text-align: center;
+    text-align: center;
 }
 
 td {
-  font: 'Roboto';
-  color: wheat;
-  line-height: 1.9rem;
-  text-align: left;
-  padding: 0.5rem;
-  border-bottom: 1px solid wheat;
+    font: 'Roboto';
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
 }
 
 td:first-child {
-  font: 1rem 'Nunito';
-  font-weight: bold;
+    font: 1rem 'Nunito';
+    font-weight: bold;
 }
 
 td:nth-child(2) {
-  font-style: italic;
-  font-size: 0.95rem;
-  color: white;
+    font: 0.9rem 'Nunito';
 }
 
-#head {
-  font-size: 1.25rem;
-}
-
-/* Frontend and Cloud Styling */
+/* DevOps and WebDev Styling */
 #link-container {
-  width: 80%;
-  height: 85%;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-top: 4rem;
-  background-color: rgba(255, 255, 255, 0.241);
-  border-radius: 5px;
+    width: 80%;
+    height: 85%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-radius: 5px;
 }
 
-#frontendTitle {
-  font: 1.5rem var(--intro-line-font);
-  font-weight: 600;
-  color: black;
-  text-align: center;
+#title {
+    transform: translateY(150%);
+    font: 1.5rem var(--quicksand);
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
 }
 
 section {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  padding-top: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 section>a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10rem;
-  width: 12rem;
-  padding: 0rem 0.7rem;
-  border-radius: 0.9rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-family: 'Nunito';
-  font-size: 1rem;
-  background-color: black;
-  margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 6rem;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font: 0.5rem 'Nunito';
+    background-color: var(--blue);
 }
 
 section>a:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 2px 2px 10px 1px wheat;
+    transform: translateY(-0.3rem);
 }
 
-/* media query for small smartphones */
-@media (min-width: 0px) and (max-width: 359px) {
-  body {
-    background: transparent;
-  }
-
-  #logo {
-    right: 0;
-    top: -0.6rem;
-    font-size: 2.5rem;
-    z-index: 10;
-    position: fixed;
-    margin-right: 0.5rem;
-  }
-
-  nav {
+/* footer */
+#footer {
     display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 80%;
-    height: 100vh;
-    justify-content: flex-start;
-    border-radius: 3px;
-    position: fixed;
-    transform: translateX(-400px);
-    z-index: 10;
-    padding-top: 0.3rem;
-    transition: 0.5s;
-  }
-
-  .shownav {
-    transform: translateX(0);
-    transition: 0.5s;
-  }
-
-  nav a {
-    color: gainsboro;
-    transition: 0.2s;
-  }
-
-  nav a:hover {
-    transform: translateX(1rem);
-    text-decoration: none;
-    background-color: wheat;
-    color: black;
-    border-radius: 3px;
-  }
-
-  .hamburger {
-    display: block;
-    z-index: 10;
-    background-color: #0c0c0c;
-    width: 100vw;
-    height: 7.5vh;
-  }
-
-  .hamburger2 span {
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin: 4px 15px;
-    border-radius: 1mm;
-    background-color: white;
-  }
-
-  .hamburger2>.top-bun {
-    transform: rotate(45deg) translate(5px, 7px);
-  }
-
-  .hamburger2>.middle {
-    visibility: hidden;
-  }
-
-  .hamburger2>.bottom-bun {
-    transform: rotate(-45deg) translate(5px, -7px);
-  }
-
-  /* Home Styling */
-  figure {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(/src/Adeyomola-4small.webp);
-    position: fixed;
-    z-index: -1;
-  }
-
-  #welcome {
-    width: 85%;
-  }
-
-  #hi {
-    font: 1.2rem var(--intro-line-font);
-  }
-
-  #intro {
-    font: 2.5rem var(--intro-line-font);
-  }
-
-  /* About Me Styling */
-  #details {
-    max-width: 100%;
-    width: 90%;
-    transform: translateX(0);
-    font: 0.9rem 'Nunito';
-    line-height: 1.5rem;
-  }
-
-  /* Frontend Styling */
-  #link-container {
-    margin-top: 2rem;
-    width: 95%;
-    height: 90%;
-  }
-
-  #frontendTitle {
-    font-size: 1rem;
-  }
-
-  section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  section>a {
-    height: 5rem;
-    width: 5rem;
-    font-size: 0.39rem;
-    margin: 0.5rem;
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font: 0.95rem var(--quicksand);
 }
 
-/* media query for phablets */
-@media (min-width: 360px) and (max-width: 760px) {
-  body {
-    background: transparent;
-  }
+@media (min-width: 0px) and (max-width: 359.9px) {
+    #background {
+        display: block;
+        top: -15rem;
+        height: 85%;
+    }
 
-  #logo {
-    right: 0;
-    top: -0.7rem;
-    font-size: 2.8rem;
-    z-index: 10;
-    position: fixed;
-    margin-right: 0.5rem;
-  }
+    td {
+        padding: 0.1rem;
+    }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 80%;
-    height: 100vh;
-    justify-content: flex-start;
-    border-radius: 3px;
-    padding-top: 0.5rem;
-    position: fixed;
-    transform: translateX(-800px);
-    z-index: 10;
-    transition: 0.5s;
-  }
+    td:first-child {
+        font-size: 1.05rem;
+    }
 
-  .shownav {
-    transform: translateX(0);
-    transition: 0.5s;
-  }
+    td:nth-child(2) {
+        font-size: 0.8rem;
+    }
 
-  nav a {
-    color: gainsboro;
-    transition: 0.2s;
-  }
+    section>a {
+        font-size: 40%;
+        height: 4rem;
+        width: 4rem;
+    }
 
-  nav a:hover {
-    transform: translateX(0.5rem);
-    text-decoration: none;
-    background-color: wheat;
-    color: black;
-    border-radius: 3px;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    z-index: 10;
-    background-color: #0c0c0c;
-    width: 100vw;
-    height: 6vh;
-  }
-
-  .hamburger2 span {
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin: 4px 15px;
-    border-radius: 1mm;
-    background-color: white;
-  }
-
-  .hamburger2>.top-bun {
-    transform: rotate(45deg) translate(5px, 7px);
-  }
-
-  .hamburger2>.middle {
-    visibility: hidden;
-  }
-
-  .hamburger2>.bottom-bun {
-    transform: rotate(-45deg) translate(5px, -7px);
-  }
-
-  /* Home Styling */
-  figure {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(/src/Adeyomola-4phablets.webp);
-    position: fixed;
-    z-index: -1;
-  }
-
-  #welcome {
-    width: 90%;
-  }
-
-  #hi {
-    font: 1.5rem var(--intro-line-font);
-  }
-
-  #intro {
-    font: 3rem var(--intro-line-font);
-  }
-
-  /* About Me Styling */
-  #details {
-    max-width: 100%;
-    width: 90%;
-    transform: translateX(0);
-    font: 1.1rem 'Nunito';
-    line-height: 1.7rem;
-  }
-
-  /* Frontend Styling */
-  #link-container {
-    margin-top: 3rem;
-    width: 95%;
-    height: 90%;
-  }
-
-  section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  section>a {
-    height: 6rem;
-    width: 6rem;
-    font-size: 0.6rem;
-    margin: 0.6rem;
-  }
+    #footer {
+        font-size: 0.7rem;
+    }
 }
 
-/* media query for tablets */
-@media (min-width: 761px) and (max-width: 1279px) {
-  body {
-    background: transparent;
-  }
+@media (min-width: 360px) and (max-width: 767.9px) {
+    #background {
+        display: block;
+        height: 90%;
+    }
 
-  #logo {
-    right: 0;
-    top: -0.9rem;
-    font-size: 3.8rem;
-    z-index: 10;
-    position: fixed;
-    margin-right: 0.5rem;
-  }
+    #logos>img {
+        width: 7%;
+        height: 7%;
+        margin: 0.1rem;
+    }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 80%;
-    height: 100vh;
-    justify-content: flex-start;
-    border-radius: 3px;
-    position: fixed;
-    transform: translateX(-1280px);
-    z-index: 10;
-    padding-top: 0.8rem;
-    transition: 0.5s;
-  }
-
-  .shownav {
-    transform: translateX(0);
-    transition: 0.5s;
-  }
-
-  nav a {
-    color: gainsboro;
-    font-size: large;
-    transition: 0.2s;
-  }
-
-  nav a:hover {
-    transform: translateX(1rem);
-    text-decoration: none;
-    background-color: wheat;
-    color: black;
-    border-radius: 3px;
-  }
-
-  .hamburger {
-    display: block;
-    margin-top: 5px;
-    margin-left: 5px;
-    transform: scale(1.2);
-    z-index: 10;
-  }
-
-  .hamburger2 span {
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin: 4px 15px;
-    border-radius: 1mm;
-    background-color: white;
-  }
-
-  .hamburger2>.top-bun {
-    transform: rotate(45deg) translate(5px, 7px);
-  }
-
-  .hamburger2>.middle {
-    visibility: hidden;
-  }
-
-  .hamburger2>.bottom-bun {
-    transform: rotate(-45deg) translate(5px, -7px);
-  }
-
-  /* Home Styling */
-  figure {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(/src/Adeyomola-4tabs.webp);
-    position: fixed;
-    z-index: -1;
-  }
-
-  #welcome {
-    width: 90%;
-  }
-
-  #hi {
-    font: 2.5rem var(--intro-line-font);
-  }
-
-  #intro {
-    font: 6rem var(--intro-line-font);
-  }
-
-  /* About Me Styling */
-  #details {
-    max-width: 100%;
-    width: 80%;
-    transform: translateX(0);
-    font: 1.2rem 'Nunito';
-    line-height: 2rem;
-  }
-
-  /* Frontend Styling */
-  #link-container {
-    width: 95%;
-    height: 90%;
-    margin-top: 2rem;
-  }
-
-  section {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  section>a {
-    height: 8rem;
-    width: 8rem;
-    font-size: 0.9rem;
-    margin: 0.9rem;
-  }
+    section>a {
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
-@media (min-width: 0px) and (max-width: 600px) and (orientation: landscape) {
-  body {
-    height: 65vw;
-  }
+@media (min-width: 768px) and (max-width: 1279.9px) {
+    nav>a {
+        width: 10%;
+    }
 
-  nav {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
+    #nav-details>p {
+        font-size: 0.8rem;
+        width: 10%;
+    }
 
-  .hamburger {
-    height: 5vw;
-  }
+    #background {
+        display: block;
+        height: 105%;
+        top: -45rem;
+    }
 
-  /* Home Styling */
-  figure {
-    background-image: url(/src/Adeyomola-4sland.webp);
-  }
+    #intro {
+        font-size: 4rem;
+    }
 
-  #hi {
-    transform: scale(1.1);
-  }
+    #hi {
+        font-size: 1.8rem;
+    }
 
-  #intro {
-    transform: scale(1.1);
-  }
+    #talk {
+        font-size: 1rem;
+    }
 
-  /* About Me Styling */
-  #details {
-    width: 80%;
-    font-size: 0.9rem;
-  }
+    #logos>img {
+        width: 5%;
+        height: 5%;
+        margin: 0.1rem;
+    }
 
-  /* Front and Cloud */
-  #link-container {
-    height: 50vw;
-  }
+    section {
+        width: fit-content;
+        justify-content: left;
+    }
 
-  section {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  section>a {
-    height: 4rem;
-    width: 4rem;
-    font-size: 0.39rem;
-    margin: 0.3rem;
-  }
+    section>a {
+        font-size: 75%;
+        height: 8rem;
+        width: 9rem;
+    }
 }
 
-@media (min-width: 601px) and (max-width: 1023px) and (orientation: landscape) {
-  body {
-    height: 55vw;
-  }
+/* landscape */
+@media (min-width: 0px) and (max-width: 599.9px) and (orientation: landscape) {
+    #background1 {
+        display: block;
+    }
 
-  nav {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
+    #welcome {
+        transform: translateY(30%);
+    }
 
-  /* Home Styling */
-  figure {
-    background-image: url(/src/Adeyomola-4pland.webp);
-  }
+    #intro {
+        font-size: 2rem;
+    }
 
-  #hi {
-    font-size: 1.5rem;
-  }
+    #logos>img {
+        width: 5%;
+        height: 5%;
+    }
 
-  #intro {
-    font-size: 3rem;
-  }
+    td {
+        padding: 0rem;
+    }
 
-  /* About Me Styling */
-  #details {
-    font-size: 1rem;
-  }
+    td:first-child {
+        font-size: 0.95rem;
+    }
 
-  /* Frontend Styling */
-  #link-container {
-    margin-top: 5rem;
-    height: 45vw;
-  }
+    td:nth-child(2) {
+        font-size: 0.75rem;
+    }
 
-  section {
-    grid-template-columns: repeat(7, 1fr);
-  }
-
-  section>a {
-    height: 5.1rem;
-    width: 5.1rem;
-    font-size: 0.6rem;
-    margin: 0.4rem;
-  }
+    section>a {
+        font-size: 45%;
+        height: 4rem;
+        width: 4.5rem;
+    }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+@media (min-width: 601px) and (max-width: 920px) and (orientation: landscape) {
+    #background1 {
+        display: block;
+    }
 
-  /* Home Styling */
-  figure {
-    background-image: url(/src/Adeyomola-4tland.webp);
-  }
+    #welcome {
+        transform: translateY(30%);
+    }
 
-  /* About Me Styling */
-  #details {
-    width: 55%;
-    transform: translateX(30%);
-  }
+    #intro {
+        font-size: 2rem;
+    }
 
-  /* Frontend Styling */
-  #link-container {
-    margin-top: 1rem;
-  }
+    #hi {
+        font-size: 1.3rem;
+    }
 
-  section {
-    grid-template-columns: repeat(6, 1fr);
-  }
+    td {
+        padding: 0.2rem;
+    }
 
-  section>a {
-    height: 8.5rem;
-    width: 8.5rem;
-    font-size: 0.9rem;
-    margin: 0.9rem;
-  }
+    td:first-child {
+        font-size: 1rem;
+    }
+
+    td:nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+    section>a {
+        font-size: 50%;
+        height: 4.5rem;
+        width: 5rem;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1279.9px) and (orientation: landscape) {
+    #background {
+        display: block;
+        height: 300%;
+        top: -90rem;
+    }
+}
+
+/* PC Screens */
+@media (min-width: 1280px) {
+    #logo {
+        position: fixed;
+        top: 0;
+        font-size: 3rem;
+        background-color: transparent;
+    }
+
+    nav {
+        left: 0;
+        width: 4%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        max-width: 80%;
+        color: black;
+        height: 3rem;
+    }
+
+    #nav-details {
+        top: 0;
+        left: -6rem;
+        width: 5%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-details>p {
+        text-align: left;
+        justify-content: left;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .shownav {
+        transform: translateX(198%);
+    }
+
+    #background1 {
+        display: block;
+    }
+
+    #intro {
+        font-size: 7rem;
+    }
+
+    #hi {
+        font-size: 2.5rem;
+    }
+
+    #talk {
+        font-size: 1.2rem;
+    }
+
+    #logos>img {
+        width: 3%;
+        height: 3%;
+        margin: 0.1rem;
+    }
+
+    /* Skills */
+    table {
+        width: 60%;
+        transform: translateX(35%);
+    }
+
+    td:first-child {
+        font: 1.2rem 'Nunito';
+        font-weight: bold;
+    }
+
+    td:nth-child(2) {
+        font: 1rem 'Nunito';
+    }
+
+    /* The Rest */
+    section>a {
+        font-size: 100%;
+        height: 10rem;
+        width: 12rem;
+    }
 }

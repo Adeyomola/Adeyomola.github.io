@@ -1,6 +1,7 @@
 function Cloud() {
   return (
     <>
+      <p id="title">Cloud and DevOps</p>
       <main id="cloud">
         <div id="link-container">
           <section>

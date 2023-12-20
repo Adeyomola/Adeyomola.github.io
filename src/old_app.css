@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Caveat&family=Nunito:wght@200&family=Quicksand:wght@300;500&family=Roboto:wght@100&display=swap');
+
+* {
+  --intro-line-font: 'Quicksand';
+  --intro-second-line: 'Caveat';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15px;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-image: url(/src/myimages/Adeyomola-4.webp); */
+  /* background-color: #030303; */
+  background-color: rgb(63, 62, 62);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  background-color: #030303;
+}
+
+#logo {
+  position: fixed;
+  font: 3rem var(--intro-line-font);
+  font-weight: 900;
+  color: wheat;
+  margin-left: 1rem;
+  text-align: center;
+  z-index: 20;
+  top: -0.1rem;
+}
+
+nav a {
+  margin: 5px;
+  text-decoration: none;
+  font: 1rem var(--intro-line-font);
+  color: white;
+  padding: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  border-radius: 3px;
+  color: wheat;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: -0.05rem;
+  padding: 2px 0;
+}
+
+.hamburger .top-bun {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 4px 6px;
+  background-color: wheat;
+  border-radius: 1mm;
+}
+
+.hamburger .middle {
+  display: block;
+  width: 20px;
+  height: 4px;
+  margin: 4px 6px;
+  background-color: wheat;
+  border-radius: 1mm;
+}
+
+.hamburger .bottom-bun {
+  display: block;
+  width: 15px;
+  height: 4px;
+  margin: 4px 6px;
+  background-color: white;
+  border-radius: 1mm;
+}
+
+/* Home Styling */
+main {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#welcome {
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#hi {
+  font: 2.5rem var(--intro-line-font);
+  color: white;
+}
+
+#intro {
+  font: 7rem var(--intro-line-font);
+  color: wheat;
+}
+
+
+
+/* About Me Styling */
+#aboutDiv {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  transform: translateY(25%);
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+}
+
+#talk {
+  padding: 1rem 0;
+  font: 1.2rem 'Nunito';
+  line-height: 1.6rem;
+}
+
+table {
+  width: 100%;
+  font-style: italic;
+}
+
+thead>tr>td {
+  text-align: center;
+}
+
+td {
+  font: 'Roboto';
+  color: wheat;
+  line-height: 1.9rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid wheat;
+}
+
+td:first-child {
+  font: 1rem 'Nunito';
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  font: italic 0.95rem 'Nunito';
+  color: white;
+}
+
+#head {
+  font-size: 1.25rem;
+}
+
+/* Skills */
+
+#logos {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  margin-top: 1rem;
+  /* border: 1px solid blue; */
+  /* background-color: wheat; */
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+#logos>img {
+  width: 38px;
+  height: 39px;
+  margin: 0.1rem;
+}
+
+#logos>img:hover {
+  scale: 1.15;
+}
+
+/* Frontend and Cloud Styling */
+#link-container {
+  width: 80%;
+  height: 85%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.241);
+  border-radius: 5px;
+}
+
+#frontendTitle {
+  font: 1.5rem var(--intro-line-font);
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  padding-top: 0.5rem;
+}
+
+section>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 12rem;
+  padding: 0rem 0.7rem;
+  border-radius: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Nunito';
+  font-size: 1rem;
+  background-color: black;
+  margin: 1rem;
+}
+
+section>a:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 2px 2px 10px 1px wheat;
+}
+
+/* media query for small smartphones */
+@media (min-width: 0px) and (max-width: 359.9px) {
+  /* body {
+    background: transparent;
+  } */
+
+  #logo {
+    right: 0;
+    top: -0.6rem;
+    font-size: 2.5rem;
+    z-index: 10;
+    position: fixed;
+    margin-right: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 80%;
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 3px;
+    position: fixed;
+    transform: translateX(-400px);
+    z-index: 10;
+    padding-top: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .shownav {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  nav a {
+    color: gainsboro;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    transform: translateX(1rem);
+    text-decoration: none;
+    background-color: wheat;
+    color: black;
+    border-radius: 3px;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 10;
+    /* background-color: #0c0c0c; */
+    width: 100vw;
+    height: 7.5vh;
+  }
+
+  .hamburger2 span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 15px;
+    border-radius: 1mm;
+    background-color: white;
+  }
+
+  .hamburger2>.top-bun {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  .hamburger2>.middle {
+    visibility: hidden;
+  }
+
+  .hamburger2>.bottom-bun {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  /* Home Styling */
+  /* figure {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/Adeyomola-4small.webp);
+    background-color: #030303;
+    background-color: rgb(63, 62, 62);
+    position: fixed;
+    z-index: -1;
+  } */
+
+  #welcome {
+    width: 100%;
+  }
+
+  #hi {
+    font: 1.2rem var(--intro-line-font);
+    scale: 0.9;
+  }
+
+  #intro {
+    font: 2.5rem var(--intro-line-font);
+    scale: 0.9;
+  }
+
+  #talk {
+    scale: 0.9;
+  }
+
+  /* About Me Styling */
+  #details {
+    max-width: 100%;
+    width: 90%;
+    /* transform: translateX(0); */
+    font: 0.9rem 'Nunito';
+    line-height: 1.5rem;
+  }
+
+  /* Skills */
+  #logos>img {
+    width: 90%;
+    height: 80%;
+  }
+
+  #aboutDiv {
+    transform: translateY(0%);
+    width: 100%;
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    margin-top: 2rem;
+    width: 95%;
+    height: 90%;
+  }
+
+  #frontendTitle {
+    font-size: 1rem;
+  }
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section>a {
+    height: 5rem;
+    width: 5rem;
+    font-size: 0.39rem;
+    margin: 0.5rem;
+  }
+}
+
+/* media query for phablets */
+@media (min-width: 360px) and (max-width: 760.9px) {
+  /* body {
+    background: transparent;
+  } */
+
+  #logo {
+    right: 0;
+    top: -0.7rem;
+    font-size: 2.8rem;
+    z-index: 10;
+    position: fixed;
+    margin-right: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 80%;
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 3px;
+    padding-top: 0.5rem;
+    position: fixed;
+    transform: translateX(-800px);
+    z-index: 10;
+    transition: 0.5s;
+  }
+
+  .shownav {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  nav a {
+    color: gainsboro;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    transform: translateX(0.5rem);
+    text-decoration: none;
+    background-color: wheat;
+    color: black;
+    border-radius: 3px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    /* background-color: #0c0c0c; */
+    width: 100vw;
+    height: 6vh;
+  }
+
+  .hamburger2 span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 15px;
+    border-radius: 1mm;
+    background-color: white;
+  }
+
+  .hamburger2>.top-bun {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  .hamburger2>.middle {
+    visibility: hidden;
+  }
+
+  .hamburger2>.bottom-bun {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  /* Home Styling */
+  /* figure {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/Adeyomola-4phablets.webp);
+    background-color: #030303;
+    position: fixed;
+    z-index: -1;
+  } */
+
+  #welcome {
+    width: 90%;
+  }
+
+  #hi {
+    font: 1.5rem var(--intro-line-font);
+  }
+
+  #intro {
+    font: 3rem var(--intro-line-font);
+  }
+
+  /* About Me Styling */
+  #details {
+    max-width: 100%;
+    width: 90%;
+    /* transform: translateX(0); */
+    font: 1.1rem 'Nunito';
+    line-height: 1.7rem;
+  }
+
+  /* Skills */
+  #logos>img {
+    width: 90%;
+    height: 70%;
+  }
+
+  #aboutDiv {
+    transform: translateY(10%);
+    width: 100%;
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    margin-top: 3rem;
+    width: 95%;
+    height: 90%;
+  }
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section>a {
+    height: 6rem;
+    width: 6rem;
+    font-size: 0.6rem;
+    margin: 0.6rem;
+  }
+}
+
+/* media query for tablets */
+@media (min-width: 761px) and (max-width: 1279px) {
+  /* body {
+    background: transparent;
+  } */
+
+  #logo {
+    right: 0;
+    top: -0.9rem;
+    font-size: 3.8rem;
+    z-index: 10;
+    position: fixed;
+    margin-right: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 80%;
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 3px;
+    position: fixed;
+    transform: translateX(-1280px);
+    z-index: 10;
+    padding-top: 0.8rem;
+    transition: 0.5s;
+  }
+
+  .shownav {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  nav a {
+    color: gainsboro;
+    font-size: large;
+    transition: 0.2s;
+  }
+
+  nav a:hover {
+    transform: translateX(1rem);
+    text-decoration: none;
+    background-color: wheat;
+    color: black;
+    border-radius: 3px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    transform: scale(1.2);
+    z-index: 10;
+  }
+
+  .hamburger2 span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 15px;
+    border-radius: 1mm;
+    background-color: white;
+  }
+
+  .hamburger2>.top-bun {
+    transform: rotate(45deg) translate(5px, 7px);
+  }
+
+  .hamburger2>.middle {
+    visibility: hidden;
+  }
+
+  .hamburger2>.bottom-bun {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+
+  /* Home Styling */
+  /* figure {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/src/Adeyomola-4tabs.webp);
+    background-color: #030303;
+    position: fixed;
+    z-index: -1;
+  } */
+
+  #welcome {
+    width: 90%;
+  }
+
+  #hi {
+    font: 2.5rem var(--intro-line-font);
+  }
+
+  #intro {
+    font: 6rem var(--intro-line-font);
+  }
+
+  /* About Me Styling */
+  #details {
+    max-width: 100%;
+    width: 80%;
+    /* transform: translateX(0); */
+    font: 1.2rem 'Nunito';
+    line-height: 2rem;
+  }
+
+  /* Skills */
+  #logos>img {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    width: 95%;
+    height: 90%;
+    margin-top: 2rem;
+  }
+
+  section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  section>a {
+    height: 8rem;
+    width: 8rem;
+    font-size: 0.9rem;
+    margin: 0.9rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 600px) and (orientation: landscape) {
+  body {
+    height: 65vw;
+  }
+
+  nav {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .hamburger {
+    height: 5vw;
+  }
+
+  /* Home Styling */
+  figure {
+    /* background-image: url(/src/Adeyomola-4sland.webp); */
+    background-color: #030303;
+  }
+
+  #welcome {
+    scale: 0.9;
+    width: 100%;
+  }
+
+  #hi {
+    scale: 0.85;
+  }
+
+  #intro {
+    scale: 0.85;
+  }
+
+  #talk {
+    scale: 0.85;
+  }
+
+  /* About Me Styling */
+  #details {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  /* Skills */
+  #logos>img {
+    width: 90%;
+    height: 90%;
+  }
+
+  #aboutDiv {
+    transform: translateY(0%);
+    scale: 0.7;
+    width: 100%;
+  }
+
+  /* Front and Cloud */
+
+  section {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  section>a {
+    height: 4rem;
+    width: 4rem;
+    font-size: 0.39rem;
+    margin: 0.3rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) and (orientation: landscape) {
+  body {
+    height: 55vw;
+  }
+
+  nav {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* Home Styling */
+  figure {
+    /* background-image: url(/src/Adeyomola-4pland.webp); */
+    /* background-color: #030303; */
+  }
+
+  #hi {
+    font-size: 1.2rem;
+  }
+
+  #intro {
+    font-size: 2.3rem;
+  }
+
+  #talk {
+    font-size: 0.9rem;
+  }
+
+  /* About Me Styling */
+  #details {
+    font-size: 1rem;
+  }
+
+  #aboutDiv {
+    transform: translateY(0%);
+    scale: 0.8;
+    width: 100%;
+  }
+
+  /* Frontend Styling */
+
+  section {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  section>a {
+    height: 5.1rem;
+    width: 5.1rem;
+    font-size: 0.6rem;
+    margin: 0.4rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+
+  /* Home Styling */
+  figure {
+    /* background-image: url(/src/Adeyomola-4tland.webp); */
+    /* background-color: #030303; */
+  }
+
+  /* About Me Styling */
+  #details {
+    width: 55%;
+    /* transform: translateX(30%); */
+  }
+
+  #aboutDiv {
+    transform: translateY(15%);
+    /* width: 100%; */
+  }
+
+  /* Frontend Styling */
+  #link-container {
+    margin-top: 1rem;
+  }
+
+  section {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  section>a {
+    height: 8.5rem;
+    width: 8.5rem;
+    font-size: 0.9rem;
+    margin: 0.9rem;
+  }
+}

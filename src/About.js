@@ -19,12 +19,6 @@ function About() {
                   Jenkins, Azure DevOps, Github Actions, Bash, Python,
                   Prometheus, Grafana, Elastic Stack, Ansible, Loki, Promtail,
                   Azure, and AWS.
-                  {/* <br></br>
-                  When I'm not doing Software Engineering, I'm a Pharmacist, a
-                  Writer, and i++ other things. */}
-                  {/* I get tired sometimes, and when I
-                do, you'll find me with my face buried in something comical.
-                &#128523; */}
                 </td>
               </tr>
             </thead>
