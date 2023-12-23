@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d6cc62f.css",
-    "main.js": "/static/js/main.1e7f3673.js",
+    "main.css": "/static/css/main.b0e0c1b5.css",
+    "main.js": "/static/js/main.abf8e2cc.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/kubernetes.webp": "/static/media/kubernetes.f8bc934782853727130d.webp",
     "static/media/prometheus.webp": "/static/media/prometheus.a78f7ddf367791413ea1.webp",
@@ -23,12 +23,12 @@
     "static/media/terraform.webp": "/static/media/terraform.580ff7cef1e4c4878eaf.webp",
     "static/media/elastic.webp": "/static/media/elastic.2af74ce4c22dac0a9633.webp",
     "index.html": "/index.html",
-    "main.3d6cc62f.css.map": "/static/css/main.3d6cc62f.css.map",
-    "main.1e7f3673.js.map": "/static/js/main.1e7f3673.js.map",
+    "main.b0e0c1b5.css.map": "/static/css/main.b0e0c1b5.css.map",
+    "main.abf8e2cc.js.map": "/static/js/main.abf8e2cc.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d6cc62f.css",
-    "static/js/main.1e7f3673.js"
+    "static/css/main.b0e0c1b5.css",
+    "static/js/main.abf8e2cc.js"
   ]
 }
