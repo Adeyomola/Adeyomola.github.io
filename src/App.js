@@ -1,8 +1,6 @@
-// import "./App.css";
-import "./App.css";
+import "./Cloud.css";
 import Nav from "./Nav";
 import Home from "./Home";
-import About from "./About";
 import Skills from "./Skills";
 import Front from "./frontend";
 import Cloud from "./cloud";
@@ -16,10 +14,9 @@ function App() {
       <Nav />
       <Background />
       <Home />
-      {/* <About /> */}
       <Skills />
       <Cloud />
-      {/* <Front /> */}
+      <Front />
       <Writing />
       <Footer />
     </>

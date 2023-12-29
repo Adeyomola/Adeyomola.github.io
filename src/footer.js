@@ -1,7 +1,9 @@
 function Footer() {
   return (
     <>
-      <div id="footer">Designed & Developed by Me - Adeyomola Kazeem</div>
+      <div id="footer">
+        Developed by Me - Adeyomola Kazeem; Designed By Hyperthesis Technologies
+      </div>
     </>
   );
 }

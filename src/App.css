@@ -28,8 +28,7 @@ body {
     max-width: 15%;
     font: 2.4rem var(--quicksand);
     font-weight: 900;
-    color: white;
-    background-color: var(--blue);
+    /* color: var(--blue); */
     z-index: 20;
 }
 
@@ -40,7 +39,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     z-index: 10;
-    background-color: var(--blue);
 }
 
 nav a {
@@ -51,8 +49,21 @@ nav a {
     max-width: 15%;
     height: 3rem;
     text-decoration: none;
-    font: 900 1rem var(--quicksand);
+    font: 900 1.5vh var(--quicksand);
     color: black;
+    text-align: center;
+}
+
+a span:nth-child(2) {
+    display: none;
+}
+
+a:hover :first-child {
+    display: none;
+}
+
+a:hover span:nth-child(2) {
+    display: block;
 }
 
 nav a:hover {
@@ -61,30 +72,7 @@ nav a:hover {
 
 .active {
     border-radius: 3px;
-    background-color: white;
-}
-
-#nav-details {
-    position: fixed;
-    top: -3rem;
-    right: 0;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 10;
-    background-color: var(--blue);
-}
-
-#nav-details>p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font: 0.6rem var(--quicksand);
-    color: white;
-    width: 15%;
-    height: 3rem;
+    background-color: skyblue;
 }
 
 .shownav {
@@ -128,48 +116,75 @@ nav a:hover {
 /* home */
 
 main {
-    display: grid;
-    gap: 4px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     height: 100vh;
     border-bottom: 1px solid grey;
     align-items: center;
+    justify-content: center;
 }
 
 #welcome {
     width: 80%;
     max-width: 80%;
-    margin: 0 auto;
 }
 
 #intro {
-    font: 3rem var(--quicksand);
+    font: 6vw var(--quicksand);
     color: var(--blue);
 }
 
 #hi {
-    font: 1.3rem var(--quicksand);
+    font: 4vw var(--quicksand);
 }
 
 #talk {
     padding: 0.5rem 0;
-    font: 600 0.8rem var(--nunito);
+    font: 600 3vw var(--nunito);
 }
 
 #logos {
     display: flex;
+    width: 80%;
+    max-width: 80%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin-top: 0.5rem;
 }
 
 #logos>img {
-    width: 10%;
-    height: 10%;
+    width: 4vh;
+    height: 4vh;
     margin: 0.1rem;
+    visibility: hidden;
+    animation: show 2s linear forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes show {
+    0% {
+        visibility: visible;
+        scale: 0.5;
+    }
+
+    25% {
+        transform: translateY(-1vh);
+    }
+
+    50% {
+        transform: translateY(2vh);
+    }
+
+    75% {
+        scale: 1.2;
+    }
+
+    100% {
+        visibility: visible;
+        scale: 1.0;
+    }
 }
 
 #logos>img:hover {
@@ -183,15 +198,14 @@ main {
 }
 
 #Skillsheader {
-    font: 1.5rem var(--quicksand);
+    font: 3vh var(--quicksand);
     font-weight: 600;
     color: black;
     text-align: center;
 }
 
 table {
-    width: 80%;
-    transform: translateX(10%);
+    transform: translateX(1vw);
 }
 
 thead>tr>td {
@@ -206,47 +220,56 @@ td {
 }
 
 td:first-child {
-    font: 1rem 'Nunito';
+    font: 4vw 'Nunito';
     font-weight: bold;
 }
 
 td:nth-child(2) {
-    font: 0.9rem 'Nunito';
+    font: 4vw 'Nunito';
 }
 
 /* DevOps and WebDev Styling */
-#link-container {
-    width: 80%;
-    height: 85%;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    border-radius: 5px;
+#cloud {
+    display: flex;
+    transform: translateX(1vw);
+    border: 1px solid yellow;
 }
 
 #title {
-    transform: translateY(150%);
-    font: 1.5rem var(--quicksand);
+    font: 5vw var(--quicksand);
     font-weight: 600;
     color: black;
     text-align: center;
     text-decoration: underline;
 }
 
+#link-container {
+    max-width: 100%;
+    max-height: 100%;
+    /* margin-top: 4rem; */
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
 section {
-    margin-top: 1rem;
     display: flex;
-    width: fit-content;
+    width: 100%;
+    border: 1px solid blue;
+    /* width: fit-content; */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 section>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4.5rem;
-    width: 6rem;
+    height: 14vh;
+    width: 28vw;
     padding: 0.7rem;
     margin: 0.5rem;
     border-radius: 0.9rem;
@@ -269,7 +292,7 @@ section>a:hover {
     align-items: center;
     width: 100%;
     height: 10vh;
-    font: 0.95rem var(--quicksand);
+    font: 1.85vh var(--quicksand);
 }
 
 @media (min-width: 0px) and (max-width: 359.9px) {
@@ -277,28 +300,6 @@ section>a:hover {
         display: block;
         top: -15rem;
         height: 85%;
-    }
-
-    td {
-        padding: 0.1rem;
-    }
-
-    td:first-child {
-        font-size: 1.05rem;
-    }
-
-    td:nth-child(2) {
-        font-size: 0.8rem;
-    }
-
-    section>a {
-        font-size: 40%;
-        height: 4rem;
-        width: 4rem;
-    }
-
-    #footer {
-        font-size: 0.7rem;
     }
 }
 
@@ -308,27 +309,13 @@ section>a:hover {
         height: 90%;
     }
 
-    #logos>img {
-        width: 7%;
-        height: 7%;
-        margin: 0.1rem;
-    }
-
-    section>a {
+    /* section>a {
         height: 5rem;
         width: 5rem;
-    }
+    } */
 }
 
 @media (min-width: 768px) and (max-width: 1279.9px) {
-    nav>a {
-        width: 10%;
-    }
-
-    #nav-details>p {
-        font-size: 0.8rem;
-        width: 10%;
-    }
 
     #background {
         display: block;
@@ -336,25 +323,7 @@ section>a:hover {
         top: -45rem;
     }
 
-    #intro {
-        font-size: 4rem;
-    }
-
-    #hi {
-        font-size: 1.8rem;
-    }
-
-    #talk {
-        font-size: 1rem;
-    }
-
-    #logos>img {
-        width: 5%;
-        height: 5%;
-        margin: 0.1rem;
-    }
-
-    section {
+    /* section {
         width: fit-content;
         justify-content: left;
     }
@@ -363,21 +332,68 @@ section>a:hover {
         font-size: 75%;
         height: 8rem;
         width: 9rem;
-    }
+    } */
 }
 
 /* landscape */
-@media (min-width: 0px) and (max-width: 599.9px) and (orientation: landscape) {
+@media (orientation: landscape) {
     #background1 {
         display: block;
     }
 
-    #welcome {
-        transform: translateY(30%);
+    /* home */
+    main {
+        height: 100vh;
+        transform: translateY(5vh);
+    }
+
+    #welcome,
+    #logos {
+        width: 70%;
     }
 
     #intro {
-        font-size: 2rem;
+        font-size: 9vh;
+    }
+
+    #hi {
+        font-size: 6vh;
+    }
+
+    #talk {
+        font-size: 4.5vh;
+    }
+
+    #logos>img {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    /* Skills */
+    #Skillsheader {
+        font-size: 3vw;
+    }
+
+    td:first-child {
+        font-size: 4vh;
+    }
+
+    td:nth-child(2) {
+        font-size: 4vh;
+    }
+
+    /* footer */
+    #footer {
+        height: 10vw;
+        font-size: 1.85vw;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 599.9px) and (orientation: landscape) {
+    /* 
+
+    #welcome {
+        transform: translateY(30%);
     }
 
     #logos>img {
@@ -401,20 +417,12 @@ section>a:hover {
         font-size: 45%;
         height: 4rem;
         width: 4.5rem;
-    }
+    } */
 }
 
 @media (min-width: 601px) and (max-width: 920px) and (orientation: landscape) {
-    #background1 {
+    /* #background1 {
         display: block;
-    }
-
-    #welcome {
-        transform: translateY(30%);
-    }
-
-    #intro {
-        font-size: 2rem;
     }
 
     #hi {
@@ -437,20 +445,20 @@ section>a:hover {
         font-size: 50%;
         height: 4.5rem;
         width: 5rem;
-    }
+    } */
 }
 
 @media (min-width: 921px) and (max-width: 1279.9px) and (orientation: landscape) {
-    #background {
+    /* #background {
         display: block;
         height: 300%;
         top: -90rem;
-    }
+    } */
 }
 
 /* PC Screens */
-@media (min-width: 1280px) {
-    #logo {
+@media (min-width: 1200px) {
+    /* #logo {
         position: fixed;
         top: 0;
         font-size: 3rem;
@@ -459,9 +467,11 @@ section>a:hover {
 
     nav {
         left: 0;
-        width: 4%;
+        width: 4vw;
+        max-width: 4vw;
         height: 100vh;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -473,25 +483,13 @@ section>a:hover {
         height: 3rem;
     }
 
-    #nav-details {
-        top: 0;
-        left: -6rem;
-        width: 5%;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #nav-details>p {
-        text-align: left;
-        justify-content: left;
-        font-size: 0.8rem;
-        width: 80%;
+    nav a:hover {
+        scale: 1.1;
+        font-size: scale(80%);
     }
 
     .shownav {
-        transform: translateX(198%);
+        transform: translateX(9.8vw);
     }
 
     #background1 {
@@ -511,10 +509,8 @@ section>a:hover {
     }
 
     #logos>img {
-        width: 3%;
-        height: 3%;
         margin: 0.1rem;
-    }
+    } */
 
     /* Skills */
     table {
