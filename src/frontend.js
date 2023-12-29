@@ -1,15 +1,12 @@
 function Front() {
   return (
     <>
-      <main id="frontend">
+      <main id="webdev">
         <section>
           <p id="title">Web Development</p>
           <a href="https://verba.fly.dev" target="_blank" rel="noreferrer">
             <img src={require("./images/1.png")} alt="placeholder"></img>
-            <p>
-              Verba - a lightweight content management system built with Flask,
-              HMTL, CSS, and JavaScript
-            </p>
+            <p>Verba - a blog built with Flask, HMTL, CSS, and JavaScript</p>
           </a>
           <a href="https://adeyomola.me" rel="noreferrer">
             <img

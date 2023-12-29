@@ -3,9 +3,9 @@ function Skills() {
   return (
     <main id="skills">
       <table id="table">
-      <p className="cando" id="Skillsheader">
-        Skills and Tools
-      </p>
+        <p className="cando" id="Skillsheader">
+          Skills and Tools
+        </p>
         <thead>
           <tr></tr>
         </thead>
@@ -13,9 +13,9 @@ function Skills() {
           <tr>
             <td className="cando">DevOps and Sec Tools</td>
             <td className="cando">
-              Ansible, Docker, Kubernetes, Terraform, Jenkins, AzureDevOps,
-              Linux, Prometheus, Grafana, Loki, Promtail, ElasticSearch,
-              Logstash, Kibana, SonarQube, Trivy.
+              Ansible, Docker, Kubernetes, Terraform, Jenkins, Github Actions,
+              AzureDevOps, Linux, Prometheus, Grafana, Loki, Promtail,
+              ElasticSearch, Logstash, Kibana, SonarQube, Trivy.
             </td>
           </tr>
           <tr>
@@ -28,7 +28,7 @@ function Skills() {
           </tr>
           <tr>
             <td className="cando">Frameworks and Libraries</td>
-            <td className="cando">Flask, React</td>
+            <td className="cando">Flask, React, Bootstrap</td>
           </tr>
           <tr>
             <td className="cando">Hard Skills</td>

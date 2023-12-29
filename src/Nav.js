@@ -2,68 +2,15 @@
 import "./Nav.css";
 import { Link } from "react-scroll";
 
-function hover() {
-  const home = document.getElementById("home");
-  const skills = document.getElementById("skills");
-  const devops = document.getElementById("devops");
-  const webdev = document.getElementById("webdev");
-  const writing = document.getElementById("writing");
-  const github = document.getElementById("github");
-
-  if (home != null) {
-    home.addEventListener("mouseover", () => {
-      home.lastChild.innerText = "Home";
-    });
-  }
-  home.addEventListener("mouseout", () => {
-    home.lastChild.innerText = "";
-  });
-  if (skills != null) {
-    skills.addEventListener("mouseover", () => {
-      skills.lastChild.innerText = "Skills";
-    });
-  }
-  skills.addEventListener("mouseout", () => {
-    skills.lastChild.innerText = "";
-  });
-  if (devops != null) {
-    devops.addEventListener("mouseover", () => {
-      devops.lastChild.innerText = "Cloud and DevOps";
-    });
-  }
-  devops.addEventListener("mouseout", () => {
-    devops.lastChild.innerText = "";
-  });
-  if (webdev != null) {
-    webdev.addEventListener("mouseover", () => {
-      webdev.lastChild.innerText = "Web Dev";
-    });
-  }
-  webdev.addEventListener("mouseout", () => {
-    webdev.lastChild.innerText = "";
-  });
-  if (writing != null) {
-    writing.addEventListener("mouseover", () => {
-      writing.lastChild.innerText = "Technical Writing";
-    });
-  }
-  writing.addEventListener("mouseout", () => {
-    writing.lastChild.innerText = "";
-  });
-  if (github != null) {
-    github.addEventListener("mouseover", () => {
-      github.lastChild.innerText = "Github";
-    });
-  }
-  github.addEventListener("mouseout", () => {
-    github.lastChild.innerText = "";
-  });
-}
-
 function Nav() {
-  window.addEventListener("load", () => {
-    hover();
-  });
+  // window.addEventListener("load", () => {
+  //   if (window.innerWidth < 1200) {
+  //     const spans = document.getElementsByTagName("span");
+  //     for (let i = 0; i < spans.length; i++) {
+  //       spans[i].innerText = "";
+  //     }
+  //   }
+  // });
 
   // const [nav, setNav] = useState("");
   return (
@@ -97,7 +44,6 @@ function Nav() {
             duration={50}
             hashSpy={true}
             title="Home"
-            id="home"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +57,7 @@ function Nav() {
                 fill="#33404E"
               />
             </svg>
-            <span></span>
+            <span>Home</span>
           </Link>
           <Link
             to="skills"
@@ -122,7 +68,6 @@ function Nav() {
             duration={50}
             hashSpy={true}
             title="Highlight of Skills"
-            id="skills"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +81,7 @@ function Nav() {
                 fill="#33404E"
               />
             </svg>
-            <span></span>
+            <span>Skills</span>
           </Link>
           <Link
             to="cloud"
@@ -147,7 +92,6 @@ function Nav() {
             duration={50}
             hashSpy={true}
             title="portfolio-devops"
-            id="devops"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -219,18 +163,17 @@ function Nav() {
               />
             </svg>
 
-            <span></span>
+            <span>Cloud and DevOps</span>
           </Link>
           <Link
-            to="frontend"
-            href="#frontend"
+            to="webdev"
+            href="#webdev"
             spy={true}
             smooth={true}
             offset={0}
             duration={50}
             hashSpy={true}
             title="portfolio-webdev"
-            id="webdev"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +191,7 @@ function Nav() {
                 strokeLinejoin="round"
               />
             </svg>
-            <span></span>
+            <span>Web Dev</span>
           </Link>
           <Link
             to="writing"
@@ -259,7 +202,6 @@ function Nav() {
             duration={50}
             hashSpy={true}
             title="technical-writing"
-            id="writing"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -273,14 +215,13 @@ function Nav() {
                 fill="#33404E"
               />
             </svg>
-            <span></span>
+            <span>Technical Writing</span>
           </Link>
           <a
             href="https://github.com/adeyomola"
             target="_blank"
             rel="noreferrer"
             title="Github"
-            id="github"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +235,7 @@ function Nav() {
                 fill="#33404E"
               />
             </svg>
-            <span></span>
+            <span>Github</span>
           </a>
         </links>
       </nav>
