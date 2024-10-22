@@ -1,4 +1,5 @@
 import "./Home.css";
+
 function Home() {
   return (
     <>
@@ -6,9 +7,38 @@ function Home() {
         <div id="welcome">
           <p id="intro">Hi! I'm Adeyomola</p>
           <p id="hi">I'm an AWS-Certified Cloud/DevOps Specialist.</p>
+          <certs id="certs">
+            <div>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.credly.com/badges/b0f68a76-d447-463e-a0dd-4823a629f6e9/embedded"
+              >
+                <img
+                  width="105"
+                  height="105"
+                  alt="AWS Certified Solutions Architect Associate"
+                  src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+                ></img>
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.credly.com/badges/3462c168-de5f-4290-bed4-8be00c28ed6f/embedded"
+              >
+                <img
+                  width="105"
+                  height="105"
+                  alt="AWS Certified Cloud Practitioner"
+                  src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+                ></img>
+              </a>
+            </div>
+          </certs>
           <p id="talk">
-            With about 2 years of experience with Linux and Cloud systems, my
-            primary focus is on CI/CD and Infrastructure Engineering.
+            My primary focus is on CI/CD and Infrastructure Engineering.
             <br></br>I work with Terraform, Docker, Kubernetes, Jenkins, Azure
             DevOps, Github Actions, Bash, Python, Prometheus, Grafana, Elastic
             Stack, Ansible, Loki, Promtail, Azure, and AWS.

@@ -14,15 +14,21 @@ function Writing() {
             <p>Medium</p>
           </a>
           <a
-            href="https://www.baeldung.com/linux/author/adeyomolakazeem"
+            href="https://www.baeldung.com/author/adeyomolakazeem"
             target="_blank"
             rel="noreferrer"
           >
             <img src={require("./images/15.png")} alt="placeholder"></img>
             <p>Baeldung</p>
           </a>
+          <a
+            href="https://www.cloudwards.net/about/adeyomola-kazeem/"
+            target="_blank"
+          >
+            <img src={require("./images/13.png")} alt="placeholder"></img>
+            <p>Cloudwards</p>
+          </a>
           {/* <a href="" target="_blank"></a>
-              <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>
               <a href="" target="_blank"></a>

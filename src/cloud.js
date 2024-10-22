@@ -5,6 +5,17 @@ function Cloud() {
         <section>
           <p id="title">Cloud and DevOps</p>
           <a
+            href="https://github.com/adeyomola/verba"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={require("./images/14.png")} alt="placeholder"></img>
+            <p>
+              Verba - a Content Publishing Platform deployed on Fly.io using
+              Github Actions
+            </p>
+          </a>
+          <a
             href="https://github.com/Adeyomola/continuous-delivery-using-AWS-codepipeline-codebuild-beanstalk"
             target="_blank"
             rel="noreferrer"
@@ -21,9 +32,7 @@ function Cloud() {
             rel="noreferrer"
           >
             <img src={require("./images/2.png")} alt="placeholder"></img>
-            <p>
-              Azure DevOps CI/CD Pipeline for a Content Management System
-            </p>
+            <p>Azure DevOps CI/CD Pipeline for a Content Management System</p>
           </a>
           <a
             href="https://github.com/Adeyomola/serverless-qr-code-API-AWS-Lambda"
@@ -47,9 +56,7 @@ function Cloud() {
             rel="noreferrer"
           >
             <img src={require("./images/5.png")} alt="placeholder"></img>
-            <p>
-              Jenkins CI/CD for a microservices application and API on EKS
-            </p>
+            <p>Jenkins CI/CD for a microservices application and API on EKS</p>
           </a>
           <a
             href="https://github.com/Adeyomola/ansible-provision-ec2-behind-alb"
@@ -105,9 +112,7 @@ function Cloud() {
             rel="noreferrer"
           >
             <img src={require("./images/12.png")} alt="placeholder"></img>
-            <p>
-              Docker Compose Configuration and Dockerfile for a LAMP Blog
-            </p>
+            <p>Docker Compose Configuration and Dockerfile for a LAMP Blog</p>
           </a>
           <a
             href="https://github.com/Adeyomola/monitoring"
